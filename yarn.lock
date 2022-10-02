@@ -887,6 +887,7 @@ __metadata:
     trash-cli: "npm:5.0.0"
     ts-dedent: "npm:2.2.0"
     ts-node: "npm:10.9.1"
+    type-fest: "npm:3.0.0"
     typescript: "npm:4.8.4"
     version-bump-prompt: "npm:6.1.0"
     vite: "npm:3.1.4"
@@ -7716,6 +7717,13 @@ __metadata:
   version: 4.0.8
   resolution: "type-detect@npm:4.0.8"
   checksum: 2d2111a44529a381e9be7090066cc89b60ac2c822194e3d213a0d5f630e81abfd07d2b91a324ef4a173973c5b0c68b0bdf29ac6896459cf819914a6f56199e0f
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:3.0.0":
+  version: 3.0.0
+  resolution: "type-fest@npm:3.0.0"
+  checksum: 9a168676bf3d1c2e063ae2a25cec083aa929ff3a38505ee1131ef088b343017dd40b2747d5b9c4fb5879b0afc725b839643797cec5a2cec01889ade71b975e49
   languageName: node
   linkType: hard
 

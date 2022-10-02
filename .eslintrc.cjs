@@ -11,7 +11,15 @@
 const config = {
   root: true,
   extends: ['./.eslintrc.base.cjs'],
-  overrides: [...require('./.eslintrc.base.cjs').overrides]
+  overrides: [
+    ...require('./.eslintrc.base.cjs').overrides,
+    {
+      files: ['./src/toggle.ts'],
+      rules: {
+        'unicorn/prefer-json-parse-buffer': 0
+      }
+    }
+  ]
 }
 
 module.exports = config
