@@ -61,7 +61,31 @@ yarn add -D @flex-development/toggle-pkg-type@flex-development/toggle-pkg-type
 
 ## Usage
 
-**TODO**: Update documentation.
+### CLI
+
+```sh
+  Usage
+    $ toggle-pkg-type [off|on] [options]
+
+  Options
+    -v, --version    Displays current version
+    -h, --help       Displays this message
+
+  Examples
+    $ toggle-pkg-type
+    $ toggle-pkg-type off
+    $ toggle-pkg-type on
+```
+
+### Programmatic
+
+```javascript
+import toggle from '@flex-development/toggle-pkg-type'
+
+toggle()
+toggle('off')
+toggle('on)
+```
 
 [1]:
     https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#about-scopes-and-permissions-for-package-registries
