@@ -7,9 +7,13 @@
 
 import sade from 'sade'
 import pkg from '../package.json' assert { type: 'json' }
+import toggle from './toggle'
 
 sade(`${pkg.name.replace(/.*\//, '')} [off|on]`)
   .version(pkg.version)
   .describe(pkg.description)
-  .action((): void => void 0)
+  .example('')
+  .example('off')
+  .example('on')
+  .action((command?: 'off' | 'on'): void => void toggle(command))
   .parse(process.argv)

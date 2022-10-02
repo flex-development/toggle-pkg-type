@@ -73,8 +73,7 @@
     "release": "bash ./scripts/release.sh",
     "test": "vitest run",
     "test:cov": "yarn test --coverage",
-    "test:watch": "vitest",
-    "toggle-pkg-type": "node --loader=./loader.mjs ./src/cli"
+    "test:watch": "vitest"
   },
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
