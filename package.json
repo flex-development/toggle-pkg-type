@@ -1,7 +1,7 @@
 {
   "name": "@flex-development/toggle-pkg-type",
   "description": "Easily enable or disable type in package.json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "cjs",
     "commonjs",
