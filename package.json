@@ -38,14 +38,6 @@
   },
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*.d.mts",
-        "./dist/index.d.mts"
-      ]
-    }
-  },
   "scripts": {
     "build": "mkbuild",
     "check:ci": "yarn dedupe --check && yarn check:format && yarn check:lint && yarn check:spelling && yarn check:types && yarn check:types:build && yarn test:cov && NODE_ENV=production yarn pack -o %s-%v.tgz && yarn clean:pack",
