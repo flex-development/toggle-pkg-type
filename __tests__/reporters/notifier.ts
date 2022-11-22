@@ -141,7 +141,7 @@ class Notifier implements Reporter {
    */
   protected tests(tasks: OneOrMany<Task> = []): Test[] {
     return (Array.isArray(tasks) ? tasks : [tasks]).flatMap(task => {
-      if (task.type === 'benchmark') return []
+      if (task.type === 'benchmark' || task.type === 'typecheck') return []
 
       return task.type === 'test'
         ? [task]
