@@ -75,8 +75,15 @@ gpgsign = true
 
 [core]
 autocrlf = false
+editor = code-insiders --wait
 ignorecase = false
 safecrlf = false
+
+[diff]
+tool = vscode
+
+[difftool "vscode"]
+cmd = code-insiders --wait --diff $LOCAL $REMOTE
 
 [gitflow "prefix"]
 feature = feat/
@@ -90,14 +97,17 @@ program = gpg2
 [init]
 defaultBranch = main
 
+[merge]
+tool = vscode
+
+[mergetool "vscode"]
+cmd = code-insiders --wait --merge $REMOTE $LOCAL $BASE $MERGED
+
 [pull]
 rebase = true
 
 [rebase]
 autoStash = true
-
-[url "git@bitbucket.org:"]
-insteadOf = bb:
 
 [url "git@github.com:"]
 insteadOf = gh:

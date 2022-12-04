@@ -35,5 +35,4 @@ A list of linked issues and/or pull requests.
 - [ ] new, **tolerable** vulnerabilities and/or warnings documented, if any
 - [ ] [pr naming conventions][1]
 
-[1]:
-    https://github.com/flex-development/toggle-pkg-type/blob/main/CONTRIBUTING.md#pull-request-titles
+[1]: https://github.com/flex-development/toggle-pkg-type/blob/main/CONTRIBUTING.md#pull-request-titles

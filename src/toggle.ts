@@ -8,7 +8,7 @@ import path from 'node:path'
 import type { PackageJson } from 'type-fest'
 
 /**
- * Enables or disables [`type`][1] in `package.json`.
+ * Enable or disable the [`type`][1] field in a `package.json` file.
  *
  * [1]: https://nodejs.org/api/packages.html#type
  *

@@ -27,7 +27,7 @@ updates:
       prefix: build
       include: scope
     ignore:
-      - dependency-name: '@types/node'
+      - dependency-name: typescript
     labels:
       - scope:dependencies
       - type:build

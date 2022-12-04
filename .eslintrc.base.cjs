@@ -214,7 +214,7 @@ const config = {
       2,
       {
         allowInGenericTypeArguments: true,
-        allowAsThisParameter: false
+        allowAsThisParameter: true
       }
     ],
     '@typescript-eslint/no-loop-func': 2,
@@ -281,7 +281,7 @@ const config = {
     '@typescript-eslint/no-var-requires': 2,
     '@typescript-eslint/padding-line-between-statements': 0,
     '@typescript-eslint/prefer-as-const': 2,
-    '@typescript-eslint/prefer-enum-initializers': 2,
+    '@typescript-eslint/prefer-enum-initializers': 0,
     '@typescript-eslint/prefer-for-of': 2,
     '@typescript-eslint/prefer-function-type': 2,
     '@typescript-eslint/prefer-includes': 0,
@@ -320,7 +320,8 @@ const config = {
     'jsdoc/check-access': 1,
     'jsdoc/check-alignment': 1,
     'jsdoc/check-examples': 0,
-    'jsdoc/check-indentation': [1, { excludeTags: ['description', 'example'] }],
+    // https://github.com/gajus/eslint-plugin-jsdoc/issues/541
+    'jsdoc/check-indentation': 0,
     'jsdoc/check-line-alignment': 1,
     'jsdoc/check-param-names': [
       1,
@@ -337,7 +338,7 @@ const config = {
     'jsdoc/check-tag-names': [
       1,
       {
-        definedTags: ['visibleName'],
+        definedTags: ['experimental', 'next', 'visibleName'],
         jsxTags: jsx
       }
     ],
@@ -403,6 +404,7 @@ const config = {
         enableFixer: true,
         enableRestElementFixer: true,
         enableRootFixer: true,
+        exemptedBy: ['inheritdoc', 'this'],
         unnamedRootBase: ['param'],
         useDefaultObjectProperties: true
       }
@@ -415,8 +417,8 @@ const config = {
       1,
       {
         exemptAsync: false,
-        exemptGenerators: false,
-        reportMissingReturnForUndefinedTypes: false
+        exemptGenerators: true,
+        reportMissingReturnForUndefinedTypes: true
       }
     ],
     'jsdoc/require-returns-description': 1,
@@ -594,7 +596,7 @@ const config = {
     'unicorn/no-thenable': 2,
     'unicorn/no-this-assignment': 2,
     'unicorn/no-unreadable-array-destructuring': 2,
-    'unicorn/no-unsafe-regex': 2,
+    'unicorn/no-unsafe-regex': 0,
     'unicorn/no-unused-properties': 2,
     'unicorn/no-useless-fallback-in-spread': 2,
     'unicorn/no-useless-length-check': 2,
@@ -626,7 +628,7 @@ const config = {
     'unicorn/prefer-optional-catch-binding': 2,
     'unicorn/prefer-prototype-methods': 2,
     'unicorn/prefer-reflect-apply': 2,
-    'unicorn/prefer-regexp-test': 2,
+    'unicorn/prefer-regexp-test': 0,
     'unicorn/prefer-set-has': 2,
     'unicorn/prefer-spread': 2,
     'unicorn/prefer-string-replace-all': 0,
@@ -709,7 +711,7 @@ const config = {
         '@typescript-eslint/no-unnecessary-condition': [
           2,
           {
-            allowConstantLoopConditions: false,
+            allowConstantLoopConditions: true,
             allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing: false
           }
         ],
@@ -993,16 +995,18 @@ const config = {
       }
     },
     {
-      files: ['**/__tests__/*.spec.*'],
+      files: ['**/__tests__/*.spec.*', '**/__tests__/*.spec-d.ts'],
       globals: {
         afterAll: true,
         afterEach: true,
         assert: true,
+        assertType: true,
         beforeAll: true,
         beforeEach: true,
         chai: true,
         describe: true,
         expect: true,
+        expectTypeOf: true,
         faker: true,
         it: true,
         pf: true,
@@ -1014,6 +1018,7 @@ const config = {
       plugins: ['chai-expect', 'jest-formatting'],
       rules: {
         '@typescript-eslint/no-base-to-string': 0,
+        '@typescript-eslint/no-empty-function': 0,
         '@typescript-eslint/no-unused-expressions': 0,
         '@typescript-eslint/restrict-template-expressions': 0,
         '@typescript-eslint/unbound-method': 0,
@@ -1033,9 +1038,10 @@ const config = {
         'unicorn/consistent-destructuring': 0,
         'unicorn/explicit-length-check': 0,
         'unicorn/no-array-for-each': 0,
+        'unicorn/no-useless-undefined': 0,
         'unicorn/prefer-at': 0,
         'unicorn/prefer-dom-node-append': 0,
-        'unicorn/no-useless-undefined': 0
+        'unicorn/string-content': 0
       }
     },
     {
@@ -1098,12 +1104,6 @@ const config = {
       }
     },
     {
-      files: ['helpers/tsconfig-paths.cjs'],
-      rules: {
-        'node/no-deprecated-api': 0
-      }
-    },
-    {
       files: ['tsconfig*.json'],
       rules: {
         'jsonc/no-comments': 0
@@ -1125,6 +1125,9 @@ const config = {
           name: 'namepath-defining',
           required: ['name', 'type']
         },
+        experimental: {
+          name: 'none'
+        },
         extends: {
           name: 'namepath-defining',
           required: ['type']
@@ -1140,6 +1143,10 @@ const config = {
         param: {
           name: 'namepath-defining',
           required: ['name', 'type']
+        },
+        next: {
+          name: 'namepath-defining',
+          required: ['type']
         },
         return: {
           name: 'namepath-defining',

@@ -26,7 +26,7 @@ on:
         description: release tag
         required: true
 env:
-  ARTIFACT:
+  ARTIFACT: |
     ${{ github.event.inputs.artifact || github.event.release.assets[0].browser_download_url }}
   NODE_VERSION: 16
   SCOPE: ${{ format('@{0}', github.repository_owner) }}

@@ -41,7 +41,7 @@ export const load = async (url, context, defaultLoad) => {
 
 /**
  * Returns the resolved file URL for `specifier` and `context.parentURL` and,
- * optionally, its format as a hint to {@link load}.
+ * optionally, its format as a hint to {@linkcode load}.
  *
  * **Note**: Path aliases found in tsconfig(s) are respected during resolution.
  *
@@ -53,7 +53,7 @@ export const load = async (url, context, defaultLoad) => {
  * @param {ResolveHookContext} context - Hook context
  * @param {string[]} context.conditions - Import conditions
  * @param {ImportAssertions} context.importAssertions - Import assertions map
- * @param {string} [context.parentURL] - `file:` url of importer
+ * @param {string} [context.parentURL] - Url `specifier` is resolved from
  * @param {ResolveHook} defaultResolve - Node.js default resolver
  * @return {Promise<ResolveHookResult>} Hook result
  * @throws {Error}
@@ -74,16 +74,16 @@ export const resolve = async (specifier, context, defaultResolve) => {
       result.mainFields,
       result.addMatchAll
     )(specifier, undefined, undefined, [
-      '.cjs',
-      '.cts',
-      '.js',
-      '.json',
-      '.jsx',
-      '.mdx',
       '.mjs',
+      '.cjs',
+      '.js',
+      '.jsx',
       '.mts',
+      '.cts',
       '.ts',
-      '.tsx'
+      '.tsx',
+      '.json',
+      '.css'
     ]) ?? specifier
 
   return hooks.resolve(specifier, context, defaultResolve)

@@ -1,0 +1,13 @@
+diff --git a/dist/chunk-vite-node-externalize.c57d0ad1.js b/dist/chunk-vite-node-externalize.c57d0ad1.js
+index v0.25.3..v0.25.3 100644
+--- a/dist/chunk-vite-node-externalize.c57d0ad1.js
++++ b/dist/chunk-vite-node-externalize.c57d0ad1.js
+@@ -8312,7 +8312,7 @@ class DefaultReporter extends BaseReporter {
+     super.onWatcherStart();
+   }
+   onCollected() {
+-    if (this.isTTY) {
++    if (this.isTTY || this.mode === "typecheck") {
+       this.rendererOptions.logger = this.ctx.logger;
+       this.rendererOptions.showHeap = this.ctx.config.logHeapUsage;
+       this.rendererOptions.mode = this.mode;
