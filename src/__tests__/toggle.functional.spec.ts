@@ -4,7 +4,7 @@
  */
 
 import vfs from '#fixtures/volume'
-import type { PackageJson } from 'type-fest'
+import type { PackageJson } from '@flex-development/pkg-types'
 import testSubject from '../toggle'
 
 vi.mock('node:fs')

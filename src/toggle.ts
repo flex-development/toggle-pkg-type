@@ -3,9 +3,9 @@
  * @module toggle-pkg-type/toggle
  */
 
+import type { PackageJson } from '@flex-development/pkg-types'
 import fs from 'node:fs'
 import path from 'node:path'
-import type { PackageJson } from 'type-fest'
 
 /**
  * Enable or disable the [`type`][1] field in a `package.json` file.
