@@ -5,6 +5,7 @@
  * @module toggle-pkg-type/cli
  */
 
+import type { Command } from '#src/types'
 import sade from 'sade'
 import pkg from '../package.json' assert { type: 'json' }
 import toggle from './toggle'
@@ -15,5 +16,5 @@ sade(`${pkg.name.replace(/.*\//, '')} [off|on]`)
   .example('')
   .example('off')
   .example('on')
-  .action((command?: 'off' | 'on'): void => void toggle(command))
+  .action((command?: Command): void => void toggle(command))
   .parse(process.argv)

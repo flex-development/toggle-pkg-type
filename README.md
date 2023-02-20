@@ -17,6 +17,7 @@ Toggle [`type`][1] fields in `package.json` files
 - [Install](#install)
 - [Use](#use)
 - [Types](#types)
+  - [Type Definitions](#type-definitions)
 - [Contribute](#contribute)
 
 ## What is this?
@@ -77,7 +78,7 @@ yarn add -D @flex-development/toggle-pkg-type@flex-development/toggle-pkg-type
 
 This package exports no identifiers. The default export is `toggle`.
 
-### `toggle(command?: 'off' | 'on')`
+### `toggle(command?: Command)`
 
 Enable or disable `type` in `package.json`.
 
@@ -90,6 +91,10 @@ Enable or disable `type` in `package.json`.
 ## Types
 
 This package is fully typed with [TypeScript][6].
+
+### Type Definitions
+
+- [`Command`](src/types/command.ts)
 
 ## Contribute
 

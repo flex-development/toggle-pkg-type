@@ -56,7 +56,8 @@ const config: UserConfigExport = defineConfig((): UserConfig => {
           '**/__mocks__/**',
           '**/__tests__/**',
           '**/index.ts',
-          'src/cli.ts'
+          'src/cli.ts',
+          'src/types/'
         ],
         extension: ['.ts'],
         ignoreClassMethods: [],

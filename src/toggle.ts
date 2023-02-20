@@ -3,6 +3,7 @@
  * @module toggle-pkg-type/toggle
  */
 
+import type { Command } from '#src/types'
 import type { PackageJson } from '@flex-development/pkg-types'
 import fs from 'node:fs'
 import path from 'node:path'
@@ -12,6 +13,8 @@ import path from 'node:path'
  *
  * [1]: https://nodejs.org/api/packages.html#type
  *
+ * @see {@linkcode Command}
+ *
  * @example
  *  toggle()
  * @example
@@ -19,10 +22,10 @@ import path from 'node:path'
  * @example
  *  toggle('on')
  *
- * @param {'off' | 'on'} [command] - Toggle command
+ * @param {Command?} [command] - Toggle command
  * @return {void} Nothing when complete
  */
-function toggle(command?: 'off' | 'on'): void {
+function toggle(command?: Command): void {
   // see: https://yarnpkg.com/advanced/lifecycle-scripts#environment-variables
   const { npm_package_json = 'package.json' } = process.env
 

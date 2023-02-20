@@ -4,3 +4,4 @@
  */
 
 export { default } from './toggle'
+export type * from './types'
