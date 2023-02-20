@@ -28,6 +28,7 @@ nvmrc
 ohmyzsh
 pathe
 pkgs
+pnpm
 preid
 syncer
 unstub
