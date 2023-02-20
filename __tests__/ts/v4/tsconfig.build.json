@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "declaration": true,
     "noEmitOnError": true,
     "skipLibCheck": false,
     "target": "es2020"
   },
   "exclude": ["**/__mocks__", "**/__tests__"],
   "extends": "./tsconfig.json",
-  "include": ["./dist/*", "./src/*"]
+  "include": ["../../../dist/*", "../../../src/*"]
 }

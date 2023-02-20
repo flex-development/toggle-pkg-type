@@ -9,17 +9,17 @@
  * @const config - ESLint configuration object
  */
 const config = {
-  root: true,
   extends: ['./.eslintrc.base.cjs'],
   overrides: [
     ...require('./.eslintrc.base.cjs').overrides,
     {
-      files: ['./src/toggle.ts'],
+      files: ['src/toggle.ts'],
       rules: {
         'unicorn/prefer-json-parse-buffer': 0
       }
     }
-  ]
+  ],
+  root: true
 }
 
 module.exports = config

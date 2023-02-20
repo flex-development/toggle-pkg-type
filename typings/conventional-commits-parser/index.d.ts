@@ -1,25 +1,26 @@
+import type { Nilable, Nullable } from '@flex-development/tutils'
 import {} from 'conventional-commits-parser'
 
 declare module 'conventional-commits-parser' {
-  export interface CommitRaw {
-    body: import('conventional-commits-parser').Commit.Field
+  export interface CommitBase {
+    body: Nullable<string>
     committerDate: string
-    footer: import('conventional-commits-parser').Commit.Field
-    gitTags: string
+    footer: Nullable<string>
+    gitTags?: Nilable<string>
     hash: string
-    header: import('conventional-commits-parser').Commit.Field
+    header: Nullable<string>
     mentions: string[]
-    merge: import('conventional-commits-parser').Commit.Field
+    merge: Nullable<string>
     notes: import('conventional-commits-parser').Commit.Note[]
     references: import('conventional-commits-parser').Commit.Reference[]
-    revert: import('conventional-commits-parser').Commit.Revert | null
-    scope: import('conventional-commits-parser').Commit.Field
-    subject: import('conventional-commits-parser').Commit.Field
-    type: import('conventional-commits-parser').Commit.Field
+    revert: Nullable<import('conventional-commits-parser').Commit.Revert>
+    scope?: Nilable<string>
+    subject?: Nilable<string>
+    type?: Nilable<string>
   }
 
-  export interface Commit extends CommitRaw {
-    raw: CommitRaw
+  export interface ICommit extends CommitBase {
+    raw: CommitBase
     shortHash: string
     version?: string | undefined
   }

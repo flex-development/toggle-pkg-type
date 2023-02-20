@@ -2,10 +2,6 @@
 
 <!-- A clear and concise description of your changes. -->
 
-## Tests
-
-<!-- What did you test? List tests, include snippet from test suites, or write "N/A" if tests were not needed. -->
-
 ## Linked issues
 
 <!--
@@ -25,7 +21,9 @@ A list of linked issues and/or pull requests.
 
 ## Additional context
 
-<!-- Include additional details here. Be sure to note if any tolerable vulnerabilities or warnings have been introduced. -->
+<!--
+Include additional details here. Be sure to note if any tolerable vulnerabilities or warnings have been introduced.
+-->
 
 ## Submission checklist
 

@@ -4,5 +4,3 @@
  */
 
 import './chai'
-import './faker'
-import './pf'

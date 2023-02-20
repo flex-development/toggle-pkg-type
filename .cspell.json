@@ -14,25 +14,17 @@
   "flagWords": [],
   "ignorePaths": [
     "**/*.snap",
+    "**/.*ignore",
     "**/.gitconfig",
-    "**/.gitignore",
-    "**/.gitkeep",
-    "**/.npmignore",
+    "**/CHANGELOG.md",
+    "**/LICENSE.md",
+    "**/RELEASE_NOTES.md",
     ".cspell.json",
-    ".env*",
-    ".eslintignore",
     ".git/",
     ".husky/_/",
-    ".markdownlintignore",
-    ".nvmrc",
-    ".prettierignore",
+    ".vscode/settings.json",
     ".yarn/",
-    "CHANGELOG.md",
-    "LICENSE.md",
-    "__tests__/report.json",
-    "dist/",
     "patches/",
-    "tsconfig.temp.json",
     "yarn.lock"
   ],
   "ignoreRegExpList": [
@@ -46,6 +38,5 @@
   "readonly": true,
   "useGitignore": true,
   "usePnP": false,
-  "version": "0.2",
-  "words": ["fldv", "flexdevelopmentllc"]
+  "version": "0.2"
 }

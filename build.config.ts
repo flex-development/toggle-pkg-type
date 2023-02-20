@@ -1,11 +1,10 @@
 /**
- * @file Build Config
+ * @file Configuration - Build
  * @module config/build
  */
 
 import { defineBuildConfig, type Config } from '@flex-development/mkbuild'
 import pkg from './package.json' assert { type: 'json' }
-import tsconfig from './tsconfig.build.json' assert { type: 'json' }
 
 /**
  * Build configuration options.
@@ -15,16 +14,17 @@ import tsconfig from './tsconfig.build.json' assert { type: 'json' }
 const config: Config = defineBuildConfig({
   entries: [
     { ignore: ['cli.ts'] },
-    { bundle: true, minify: true, source: 'src/cli.ts' }
+    {
+      bundle: true,
+      keepNames: true,
+      minify: true,
+      platform: 'node',
+      source: 'src/cli.ts'
+    }
   ],
-  platform: 'node',
-  sourcemap: 'external',
+  sourcemap: true,
   sourcesContent: false,
-  target: [
-    tsconfig.compilerOptions.target,
-    'node' + pkg.engines.node.replace(/^\D+/, '')
-  ],
-  treeShaking: true,
+  target: 'node' + pkg.engines.node.replace(/^\D+/, ''),
   tsconfig: 'tsconfig.build.json'
 })
 

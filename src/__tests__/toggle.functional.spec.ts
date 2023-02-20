@@ -1,13 +1,13 @@
 /**
  * @file Functional Tests - toggle
- * @module toggle-pkg-type/tests/toggle/functional
+ * @module toggle-pkg-type/tests/functional/toggle
  */
 
 import vfs from '#fixtures/volume'
 import type { PackageJson } from '@flex-development/pkg-types'
 import testSubject from '../toggle'
 
-vi.mock('node:fs')
+vi.mock('fs')
 
 describe('functional:toggle', () => {
   afterEach(() => {

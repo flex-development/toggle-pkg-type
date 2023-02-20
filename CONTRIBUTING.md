@@ -42,6 +42,8 @@ Follow the steps below to setup your local development environment:
    git config --global user.username <username>
    ```
 
+   See [`.gitconfig`](.github/.gitconfig) for a global Git config example.
+
 6. Install dependencies
 
    ```sh
@@ -95,11 +97,11 @@ Follow the steps below to setup your local development environment:
 
 | name                    |
 | ----------------------- |
-| `CI`                    |
+| `CODECOV_TOKEN`         |
+| `GITHUB_TOKEN`          |
 | `NODE_ENV`              |
 | `NODE_NO_WARNINGS`      |
-| `NODE_OPTIONS`          |
-| `VITEST_SEGFAULT_RETRY` |
+| `PAT_BOT`               |
 | `ZSH_DOTENV_FILE`       |
 
 #### GitHub Actions
@@ -232,11 +234,31 @@ Be sure to use [`it.skip`][15] or [`it.todo`][16] where appropriate.
 - `yarn test:cov`
   - See terminal for coverage output
 
+#### Code Coverage
+
+Code coverage is reported using [Codecov][17].
+
+To manually upload coverage reports:
+
+1. Retrieve `CODECOV_TOKEN` from a maintainer
+
+2. Add `CODECOV_TOKEN` to `.env.local`
+
+3. Reload shell
+
+   ```sh
+   exec $SHELL
+   ```
+
+4. Install the [Codecov Uploader][18]
+
+5. Run `yarn codecov`
+
 ### Getting Help
 
 If you need help, make note of any issues in their respective files in the form of a [JSDoc comment][12]. If you need
 help with a test, don't forget to use [`it.skip`][15] and/or [`it.todo`][16]. Afterwards, [start a discussion in the
-Q&A category][17].
+Q&A category][19].
 
 ## Labels
 
@@ -258,7 +280,7 @@ If you haven't found a related open issue, or feel that a closed issue should be
 A well-written issue
 
 - contains a well-written summary of the bug, feature, or improvement
-- contains a [minimal, reproducible example][18] (if applicable)
+- contains a [minimal, reproducible example][20] (if applicable)
 - includes links to related articles and documentation (if any)
 - includes an emoji in the title :wink:
 
@@ -339,7 +361,8 @@ Before deploying, the following steps must be completed:
    - `bump preminor --preid <dist-tag>`
    - `bump prepatch --preid <dist-tag>`
    - `bump prerelease --preid <dist-tag>`
-4. `yarn conventional-changelog -i CHANGELOG.md -s`
+4. Update `CHANGELOG.md`
+   - `yarn changelog -sw` (remove `w` to do a dry-run, i.e. `yarn changelog -s`)
 5. `yarn release`
 6. Open PR from `release/*` into `main`
    - PR title should match `release: <release-tag>`
@@ -357,8 +380,8 @@ Before deploying, the following steps must be completed:
        - delete the release branch
      - on release publish, [publish workflow](.github/workflows/publish.yml) will fire
        - if successful, the workflow will:
-         - publish package to [github package registry][19]
-         - publish package to [npm][20]
+         - publish package to [github package registry][21]
+         - publish package to [npm][22]
 
 [1]: https://brew.sh
 [2]:
@@ -377,7 +400,9 @@ Before deploying, the following steps must be completed:
 [14]: https://vitest.dev
 [15]: https://vitest.dev/api/#test-skip
 [16]: https://vitest.dev/api/#test-todo
-[17]: https://github.com/flex-development/toggle-pkg-type/discussions/new?category=q-a
-[18]: https://stackoverflow.com/help/minimal-reproducible-example
-[19]: https://github.com/features/packages
-[20]: https://npmjs.com
+[17]: https://codecov.io
+[18]: https://docs.codecov.com/docs/codecov-uploader
+[19]: https://github.com/flex-development/toggle-pkg-type/discussions/new?category=q-a
+[20]: https://stackoverflow.com/help/minimal-reproducible-example
+[21]: https://github.com/features/packages
+[22]: https://npmjs.com

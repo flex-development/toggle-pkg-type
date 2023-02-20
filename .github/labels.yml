@@ -38,6 +38,10 @@
   description: es modules
   color: 74cefc
 
+- name: scope:install
+  description: package install
+  color: 74cefc
+
 - name: scope:patches
   description: patches
   color: 74cefc
@@ -103,6 +107,10 @@
 
 - name: status:stale
   description: superseded by different issue, pull request, or discussion
+  color: e7034b
+
+- name: status:triaged
+  description: bug confirmed
   color: e7034b
 
 - name: status:wip
