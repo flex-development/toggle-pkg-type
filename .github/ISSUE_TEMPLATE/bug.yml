@@ -76,6 +76,13 @@ body:
       description: Output of `npm --version` or `yarn --version`
     validations:
       required: true
+  - id: typescript-version
+    type: input
+    attributes:
+      label: TypeScript version
+      description: TypeScript version you are using
+    validations:
+      required: true
   - id: os
     type: dropdown
     attributes:
