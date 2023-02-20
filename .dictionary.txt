@@ -10,6 +10,7 @@ dohm
 esbuild
 evanw
 fbca
+ggshield
 gpgsign
 hmarr
 iife
