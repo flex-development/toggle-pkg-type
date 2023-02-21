@@ -39,6 +39,8 @@ import fs from 'node:fs'
  * @example
  *  toggle('off')
  * @example
+ *  toggle('on', new URL('.'))
+ * @example
  *  toggle('on', process.env.npm_package_json)
  *
  * @param {Nilable<Command>?} [command=null] - Toggle command
