@@ -71,14 +71,16 @@
     "typecheck": "vitest typecheck --run",
     "typecheck:watch": "vitest typecheck"
   },
+  "dependencies": {
+    "@flex-development/mlly": "1.0.0-alpha.11",
+    "@flex-development/pathe": "1.0.3",
+    "@flex-development/tutils": "6.0.0-alpha.10"
+  },
   "devDependencies": {
     "@commitlint/cli": "17.3.0",
     "@commitlint/config-conventional": "17.3.0",
     "@flex-development/mkbuild": "1.0.0-alpha.13",
-    "@flex-development/mlly": "1.0.0-alpha.11",
-    "@flex-development/pathe": "1.0.3",
-    "@flex-development/pkg-types": "1.0.0",
-    "@flex-development/tutils": "6.0.0-alpha.10",
+    "@flex-development/pkg-types": "2.0.0",
     "@graphql-eslint/eslint-plugin": "3.16.0",
     "@types/chai": "4.3.4",
     "@types/conventional-changelog": "3.1.1",
@@ -91,6 +93,7 @@
     "@types/git-raw-commits": "2.0.1",
     "@types/is-ci": "3.0.0",
     "@types/node": "18.14.0",
+    "@types/node-fetch": "2.6.2",
     "@types/node-notifier": "8.0.2",
     "@types/prettier": "2.7.2",
     "@types/semver": "7.3.13",
@@ -148,7 +151,7 @@
     "@flex-development/tutils": "6.0.0-alpha.10"
   },
   "engines": {
-    "node": ">=14.16",
+    "node": ">=14.17.0",
     "yarn": "4.0.0-rc.39"
   },
   "packageManager": "yarn@4.0.0-rc.39",

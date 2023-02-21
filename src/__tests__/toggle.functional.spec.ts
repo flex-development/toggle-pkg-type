@@ -4,82 +4,135 @@
  */
 
 import vfs from '#fixtures/volume'
-import type { PackageJson } from '@flex-development/pkg-types'
+import type { Spy } from '#tests/interfaces'
+import * as mlly from '@flex-development/mlly'
+import pathe from '@flex-development/pathe'
+import type { PackageJson, Type } from '@flex-development/pkg-types'
+import fs from 'node:fs'
 import testSubject from '../toggle'
 
+vi.mock('@flex-development/mlly')
 vi.mock('fs')
 
 describe('functional:toggle', () => {
+  let id: string
+  let mockReadPackageJson: Spy<(typeof mlly)['readPackageJson']>
+  let pkg: PackageJson
+  let type: Type
+
   afterEach(() => {
     vfs.reset()
   })
 
-  it('should do nothing if package type is undefined', () => {
+  beforeAll(() => {
+    id = pathe.resolve('package.json')
+    pkg = { name: 'foo-package' }
+    type = 'module'
+
+    mockReadPackageJson =
+      mlly.readPackageJson as unknown as typeof mockReadPackageJson
+  })
+
+  it('should do nothing if package.json file is not found', () => {
+    // Act
+    testSubject(null, '__fixtures__/package.json')
+
+    // Expect
+    expect(fs.writeFileSync).toHaveBeenCalledTimes(0)
+  })
+
+  it('should do nothing if package type cannot be toggled', () => {
     // Arrange
-    const pkg: PackageJson = { name: 'foo', version: '1.0.0' }
-    const pkgstring: string = JSON.stringify(pkg, null, 2) + '\n'
-    vfs.writeFileSync('./package.json', pkgstring)
+    mockReadPackageJson.mockReturnValueOnce(pkg)
 
     // Act
     testSubject()
 
     // Expect
-    expect(vfs.readFileSync('./package.json', 'utf8')).to.equal(pkgstring)
+    expect(fs.writeFileSync).toHaveBeenCalledTimes(0)
   })
 
   describe('disable', () => {
-    const pkg: PackageJson = { type: 'module' }
+    let data: string
 
-    beforeEach(() => {
-      vfs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2) + '\n')
+    beforeAll(() => {
+      data = `${JSON.stringify({ ...pkg, '#type': type }, null, 2)}\n`
     })
 
-    it('should disable package type with "off"', () => {
+    beforeEach(() => {
+      mockReadPackageJson.mockReturnValue({ ...pkg, type })
+    })
+
+    it('should disable package type given ["off"]', () => {
       // Act
       testSubject('off')
 
       // Expect
-      expect(JSON.parse(vfs.readFileSync('./package.json', 'utf8') as string))
-        .to.have.property('#type')
-        .that.equals(pkg.type)
+      expect(fs.writeFileSync).toHaveBeenCalledOnce()
+      expect(fs.writeFileSync).toHaveBeenCalledWith(id, data)
+      expect(vfs.toJSON()).to.have.property(pathe.resolve(id)).equal(data)
     })
 
-    it('should disable package type without command', () => {
+    it('should disable package type given [null]', () => {
       // Act
-      testSubject()
+      testSubject(null)
 
       // Expect
-      expect(JSON.parse(vfs.readFileSync('./package.json', 'utf8') as string))
-        .to.have.property('#type')
-        .that.equals(pkg.type)
+      expect(fs.writeFileSync).toHaveBeenCalledOnce()
+      expect(fs.writeFileSync).toHaveBeenCalledWith(id, data)
+      expect(vfs.toJSON()).to.have.property(pathe.resolve(id)).equal(data)
+    })
+
+    it('should disable package type given [undefined]', () => {
+      // Act
+      testSubject(undefined)
+
+      // Expect
+      expect(fs.writeFileSync).toHaveBeenCalledOnce()
+      expect(fs.writeFileSync).toHaveBeenCalledWith(id, data)
+      expect(vfs.toJSON()).to.have.property(pathe.resolve(id)).equal(data)
     })
   })
 
   describe('enable', () => {
-    const pkg: PackageJson = { '#type': 'module' }
+    let data: string
 
-    beforeEach(() => {
-      vfs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2) + '\n')
+    beforeAll(() => {
+      data = `${JSON.stringify({ ...pkg, type }, null, 2)}\n`
     })
 
-    it('should enable package type with "on"', () => {
+    beforeEach(() => {
+      mockReadPackageJson.mockReturnValue({ ...pkg, '#type': type })
+    })
+
+    it('should enable package type given ["on"]', () => {
       // Act
       testSubject('on')
 
       // Expect
-      expect(JSON.parse(vfs.readFileSync('./package.json', 'utf8') as string))
-        .to.have.property('type')
-        .that.equals(pkg['#type'])
+      expect(fs.writeFileSync).toHaveBeenCalledOnce()
+      expect(fs.writeFileSync).toHaveBeenCalledWith(id, data)
+      expect(vfs.toJSON()).to.have.property(pathe.resolve(id)).equal(data)
     })
 
-    it('should enable package type without command', () => {
+    it('should enable package type given [null]', () => {
       // Act
-      testSubject()
+      testSubject(null)
 
       // Expect
-      expect(JSON.parse(vfs.readFileSync('./package.json', 'utf8') as string))
-        .to.have.property('type')
-        .that.equals(pkg['#type'])
+      expect(fs.writeFileSync).toHaveBeenCalledOnce()
+      expect(fs.writeFileSync).toHaveBeenCalledWith(id, data)
+      expect(vfs.toJSON()).to.have.property(pathe.resolve(id)).equal(data)
+    })
+
+    it('should enable package type given [undefined]', () => {
+      // Act
+      testSubject(undefined)
+
+      // Expect
+      expect(fs.writeFileSync).toHaveBeenCalledOnce()
+      expect(fs.writeFileSync).toHaveBeenCalledWith(id, data)
+      expect(vfs.toJSON()).to.have.property(pathe.resolve(id)).equal(data)
     })
   })
 })

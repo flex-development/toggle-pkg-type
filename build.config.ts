@@ -16,6 +16,7 @@ const config: Config = defineBuildConfig({
     { ignore: ['cli.ts'] },
     {
       bundle: true,
+      external: ['node-fetch'],
       keepNames: true,
       minify: true,
       platform: 'node',

@@ -1296,15 +1296,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flex-development/pkg-types@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@flex-development/pkg-types@npm:1.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Fpkg-types%2F1.0.0%2F596322ff94bcaf29541e3ed76742b4777510121a"
-  peerDependencies:
-    "@flex-development/tutils": ">=6.0.0-alpha.7"
-  checksum: 673e66cbcb1cdfe1529014696687e625e6d57d53f435639a18fd04a50807f08588198485ff35ada7c3a8d33aeeb081d3fe4df58a5a3a8734ae74a363d308a2c6
-  languageName: node
-  linkType: hard
-
 "@flex-development/pkg-types@npm:2.0.0":
   version: 2.0.0
   resolution: "@flex-development/pkg-types@npm:2.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Fpkg-types%2F2.0.0%2F58267203fea93d31234e31d65e2058ed566b209a"
@@ -1323,7 +1314,7 @@ __metadata:
     "@flex-development/mkbuild": "npm:1.0.0-alpha.13"
     "@flex-development/mlly": "npm:1.0.0-alpha.11"
     "@flex-development/pathe": "npm:1.0.3"
-    "@flex-development/pkg-types": "npm:1.0.0"
+    "@flex-development/pkg-types": "npm:2.0.0"
     "@flex-development/tutils": "npm:6.0.0-alpha.10"
     "@graphql-eslint/eslint-plugin": "npm:3.16.0"
     "@types/chai": "npm:4.3.4"
@@ -1337,6 +1328,7 @@ __metadata:
     "@types/git-raw-commits": "npm:2.0.1"
     "@types/is-ci": "npm:3.0.0"
     "@types/node": "npm:18.14.0"
+    "@types/node-fetch": "npm:2.6.2"
     "@types/node-notifier": "npm:8.0.2"
     "@types/prettier": "npm:2.7.2"
     "@types/semver": "npm:7.3.13"
@@ -2184,6 +2176,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node-fetch@npm:2.6.2":
+  version: 2.6.2
+  resolution: "@types/node-fetch@npm:2.6.2"
+  dependencies:
+    "@types/node": "npm:*"
+    form-data: "npm:^3.0.0"
+  checksum: bd268ca1129439b1e2c9d6291c64401b82ec50f72d5554d59ff4d52723a30dff86a175ad159f812e07795804e832afaaeffeea6f8350eb512497b8eab6c932a1
+  languageName: node
+  linkType: hard
+
 "@types/node-notifier@npm:8.0.2":
   version: 8.0.2
   resolution: "@types/node-notifier@npm:8.0.2"
@@ -2806,6 +2808,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"asynckit@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "asynckit@npm:0.4.0"
+  checksum: e4d1381289f9effe69a4dbc18e8b4e2059113dfb23634d0f4064226042870dbc53175fbf261f982d055fa2952163a8b7608781ea58314a17bb6a2cd6815af4f1
+  languageName: node
+  linkType: hard
+
 "balanced-match@npm:^1.0.0":
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
@@ -3281,6 +3290,15 @@ __metadata:
   version: 2.0.19
   resolution: "colorette@npm:2.0.19"
   checksum: f887e4f7608a1a37037f0b9f7da4d1608e2e1ac0126b87c4c143ff0348bc586173b86fde37f71f1b7742cd1c04285d0cb3cbeab391935886c86a162f4f2b5b87
+  languageName: node
+  linkType: hard
+
+"combined-stream@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "combined-stream@npm:1.0.8"
+  dependencies:
+    delayed-stream: "npm:~1.0.0"
+  checksum: c3224efc798a4f2066ff2f65c28d60b48ec73b38bf76331ecc61814875cc5c8a93beccc268ca08aaa98a141c262de5787d68685b6682b8b67ad2dadb8bd2ddd2
   languageName: node
   linkType: hard
 
@@ -3958,6 +3976,13 @@ __metadata:
   version: 2.0.0
   resolution: "define-lazy-prop@npm:2.0.0"
   checksum: 53656037e7b33e52c0cb39d8348c92087b961711c89fa7df07e6c8cfe5039d17157ee8e22c00bbdd4d1038a114f2d38821fcef4668d4c87854635ec13e87b808
+  languageName: node
+  linkType: hard
+
+"delayed-stream@npm:~1.0.0":
+  version: 1.0.0
+  resolution: "delayed-stream@npm:1.0.0"
+  checksum: 22f11ed342773dbc427e84d5a972e5c67fc34a44bf80eead5a41d8697c9303ae32991e568921cbd82553deeb1b33f3d6ecc148bf0efe3789589c8cb7b0e1a53a
   languageName: node
   linkType: hard
 
@@ -4880,6 +4905,17 @@ __metadata:
     cross-spawn: "npm:^7.0.0"
     signal-exit: "npm:^3.0.2"
   checksum: 8187629907a23d158cc4be6bf6205e51907f00c2d7068e425caebb21cda84cfe07f2e4b4b2929a591f0e7f1694e0b3980b3ba5298723ff9eca828ab483098051
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "form-data@npm:3.0.1"
+  dependencies:
+    asynckit: "npm:^0.4.0"
+    combined-stream: "npm:^1.0.8"
+    mime-types: "npm:^2.1.12"
+  checksum: 4ca2af6f04d3e3914b6ed8e5ea256da66c883bc2ae64651929f5eb842a47b6461fa51cd19c2a1d5ede09f5117593f2622814c34f8e0ac4869b91a4815c401753
   languageName: node
   linkType: hard
 
@@ -6467,7 +6503,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime-types@npm:~2.1.34":
+"mime-types@npm:^2.1.12, mime-types@npm:~2.1.34":
   version: 2.1.35
   resolution: "mime-types@npm:2.1.35"
   dependencies:

@@ -16,6 +16,8 @@ Toggle [`type`][1] fields in `package.json` files
 - [When should I use this?](#when-should-i-use-this)
 - [Install](#install)
 - [Use](#use)
+- [API](#api)
+  - [`toggle([command][, id])`](#togglecommand-id)
 - [Types](#types)
   - [Type Definitions](#type-definitions)
 - [Contribute](#contribute)
@@ -26,8 +28,9 @@ This package lets you toggle [`type`][1] fields in `package.json` files.
 
 ## When should I use this?
 
-`toggle-pkg-type` was created as a workaround for [`evanw/esbuild#2026`][2]. Use this package when you use `default`
-exports and also [ship code in ES module and CommonJS format][3].
+`toggle-pkg-type` was created as a workaround for [`evanw/esbuild#2026`][2].
+
+Use this package when you use `default` exports and also [ship code in ES module and CommonJS format][3].
 
 The original issue was closed as "working as intended", but the solution provided is not suitable for all users:
 
@@ -65,11 +68,13 @@ yarn add -D @flex-development/toggle-pkg-type@flex-development/toggle-pkg-type
     $ toggle-pkg-type [off|on] [options]
 
   Options
+    -i, --id         Module id of package directory or manifest  (default process.env.npm_package_json)
     -v, --version    Displays current version
     -h, --help       Displays this message
 
   Examples
     $ toggle-pkg-type
+    $ toggle-pkg-type --id /path/to/manifest
     $ toggle-pkg-type off
     $ toggle-pkg-type on
 ```
@@ -78,15 +83,36 @@ yarn add -D @flex-development/toggle-pkg-type@flex-development/toggle-pkg-type
 
 This package exports no identifiers. The default export is `toggle`.
 
-### `toggle(command?: Command)`
+### `toggle([command][, id])`
 
-Enable or disable `type` in `package.json`.
+Enable or disable the [`type`][1] field in a `package.json` file.
 
-#### `command?`
+The field is disabled by changing the field name to `#type`. The field value will not be modified.
 
-- `'off'`: disable `type`
-- `'on'`: enable `type`
-- `undefined`: disable `type` if enabled, enable if disabled
+Command Manifest:
+
+- `NIL` (`null`, `undefined`): Disable `type` if enabled, re-enable otherwise
+- `off`: Disable `type` field
+- `on`: Re-enable `type` field
+
+This is a **no-op** under any of the following conditions:
+
+- A `package.json` file is not found
+- The `type` field is not defined in the located manifest
+- The `#type` field is not defined in the located manifest (i.e. the `type` field was not previously disabled)
+
+#### Parameters
+
+- `{Nilable<Command>?}` **`[command=null]`** &mdash; Toggle command
+- `{mlly.ModuleId?}` **`[id='.']`** &mdash; Module id of package directory or manifest
+
+#### Returns
+
+`{void}` Nothing when complete.
+
+#### Source
+
+> [`src/toggle.ts`](src/toggle.ts)
 
 ## Types
 
