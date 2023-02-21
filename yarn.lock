@@ -189,12 +189,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:17.3.0":
-  version: 17.3.0
-  resolution: "@commitlint/config-conventional@npm:17.3.0"
+"@commitlint/config-conventional@npm:17.4.4":
+  version: 17.4.4
+  resolution: "@commitlint/config-conventional@npm:17.4.4"
   dependencies:
     conventional-changelog-conventionalcommits: "npm:^5.0.0"
-  checksum: 7e6c9496eb4561d9e1d75d482ad42e16d52786b9d5c1d3cb4c1f98ebc0ba45a541ce09c167167c98d33765434311e2f37d2bfb1439418e288b96f9d3ce1c5849
+  checksum: 1dce765072a61354a1e17078441c2422b0166bc0c974d082835e76b0117e787b426063e5c978c68a59c8ebf46de9f499157902de18122538432a12efcc7dcce2
   languageName: node
   linkType: hard
 
@@ -1310,7 +1310,7 @@ __metadata:
   resolution: "@flex-development/toggle-pkg-type@workspace:."
   dependencies:
     "@commitlint/cli": "npm:17.4.4"
-    "@commitlint/config-conventional": "npm:17.3.0"
+    "@commitlint/config-conventional": "npm:17.4.4"
     "@flex-development/mkbuild": "npm:1.0.0-alpha.13"
     "@flex-development/mlly": "npm:1.0.0-alpha.11"
     "@flex-development/pathe": "npm:1.0.3"
