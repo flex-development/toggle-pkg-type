@@ -1,3 +1,18 @@
+## [1.1.1](https://github.com/flex-development/toggle-pkg-type/compare/1.1.0...1.1.1) (2023-02-22)
+
+
+### :package: Build
+
+* **deps-dev:** Bump graphql-config from 4.3.6 to 4.4.1 ([#28](https://github.com/flex-development/toggle-pkg-type/issues/28)) ([da33b1f](https://github.com/flex-development/toggle-pkg-type/commit/da33b1f38778a8094f25d85db8c2825f77da8efb))
+* **deps-dev:** Bump serve from 14.1.2 to 14.2.0 ([#30](https://github.com/flex-development/toggle-pkg-type/issues/30)) ([2bcee1b](https://github.com/flex-development/toggle-pkg-type/commit/2bcee1b2d55e69496a99708f95134ec3fd4e769f))
+* **deps-dev:** Bump typescript from 5.0.0-dev.20230220 to 5.0.0-dev.20230222 ([#31](https://github.com/flex-development/toggle-pkg-type/issues/31)) ([d192e07](https://github.com/flex-development/toggle-pkg-type/commit/d192e0783cd38d3dd4d76f914184b9eec740b985))
+* **deps:** bump @flex-development/mlly from 1.0.0-alpha.11 to 1.0.0-alpha.13 ([7c6f8cc](https://github.com/flex-development/toggle-pkg-type/commit/7c6f8cc6eb1fd3a5a9cb584cb5364de36487bf34))
+
+
+### :robot: Continuous Integration
+
+* **deps:** Bump actions/cache from 3.2.5 to 3.2.6 ([#27](https://github.com/flex-development/toggle-pkg-type/issues/27)) ([e6772d3](https://github.com/flex-development/toggle-pkg-type/commit/e6772d36b0eb6f02b2472ade35d6bed03da7027f))
+
 ## [1.1.0](https://github.com/flex-development/toggle-pkg-type/compare/1.0.1...1.1.0) (2023-02-20)
 
 
