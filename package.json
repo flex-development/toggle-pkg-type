@@ -142,7 +142,7 @@
     "prettier": "2.8.4",
     "prettier-plugin-sh": "0.12.8",
     "sade": "1.8.1",
-    "serve": "14.1.2",
+    "serve": "14.2.0",
     "tempfile": "5.0.0",
     "trash-cli": "5.0.0",
     "ts-dedent": "2.2.0",
