@@ -1,7 +1,7 @@
 {
   "name": "@flex-development/toggle-pkg-type",
   "description": "Toggle type fields in package.json files",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "keywords": [
     "cjs",
     "commonjs",
