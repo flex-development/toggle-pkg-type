@@ -1223,13 +1223,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flex-development/mkbuild@npm:1.0.0-alpha.14":
-  version: 1.0.0-alpha.14
-  resolution: "@flex-development/mkbuild@npm:1.0.0-alpha.14::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Fmkbuild%2F1.0.0-alpha.14%2F82a5e35754d04d0aaf656b24ae6540acca873a29"
+"@flex-development/mkbuild@npm:1.0.0-alpha.16":
+  version: 1.0.0-alpha.16
+  resolution: "@flex-development/mkbuild@npm:1.0.0-alpha.16::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Fmkbuild%2F1.0.0-alpha.16%2F6221be418a141facdb7effd329183f3e602b5ded"
   dependencies:
     "@flex-development/decorator-regex": "npm:1.0.0"
     "@flex-development/ext-regex": "npm:1.0.0"
-    "@flex-development/mlly": "npm:1.0.0-alpha.13"
+    "@flex-development/mlly": "npm:1.0.0-alpha.15"
     "@flex-development/pathe": "npm:1.0.3"
     "@flex-development/pkg-types": "npm:2.0.0"
     "@flex-development/toggle-pkg-type": "npm:1.1.1"
@@ -1237,7 +1237,7 @@ __metadata:
     "@flex-development/tutils": "npm:6.0.0-alpha.10"
     colorette: "npm:2.0.19"
     consola: "npm:2.15.3"
-    cosmiconfig: "npm:8.0.0"
+    cosmiconfig: "npm:8.1.0"
     escape-string-regexp: "npm:5.0.0"
     fast-glob: "npm:3.2.12"
     merge-anything: "npm:5.1.4"
@@ -1249,7 +1249,7 @@ __metadata:
     typescript: ">=4.8"
   bin:
     mkbuild: dist/cli.mjs
-  checksum: 0b42036ca0c05f557fcdb1a7e5d0b7aaac22aa8c0ea338da58f43a08d8751c476be53eb9339c4c79316e6f14d36b4c03462669e351abe49b4b99ca03c20f1569
+  checksum: 84fedf55ade50d7477713032acc8783cdfa6ea64b87e01575c3995b54c6524b05df167aac64cc26a90b5344c6210434f20b05e4fa4975a55fc8b7e68da5bfa59
   languageName: node
   linkType: hard
 
@@ -1327,7 +1327,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": "npm:17.4.4"
     "@commitlint/config-conventional": "npm:17.4.4"
-    "@flex-development/mkbuild": "npm:1.0.0-alpha.14"
+    "@flex-development/mkbuild": "npm:1.0.0-alpha.16"
     "@flex-development/mlly": "npm:1.0.0-alpha.15"
     "@flex-development/pathe": "npm:1.0.3"
     "@flex-development/pkg-types": "npm:2.0.0"
@@ -3651,7 +3651,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cosmiconfig@npm:^8.0.0, cosmiconfig@npm:^8.1.0":
+"cosmiconfig@npm:8.1.0, cosmiconfig@npm:^8.0.0, cosmiconfig@npm:^8.1.0":
   version: 8.1.0
   resolution: "cosmiconfig@npm:8.1.0"
   dependencies:

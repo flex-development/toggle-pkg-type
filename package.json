@@ -82,7 +82,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.4.4",
     "@commitlint/config-conventional": "17.4.4",
-    "@flex-development/mkbuild": "1.0.0-alpha.14",
+    "@flex-development/mkbuild": "1.0.0-alpha.16",
     "@flex-development/pkg-types": "2.0.0",
     "@graphql-eslint/eslint-plugin": "3.16.1",
     "@types/chai": "4.3.4",
