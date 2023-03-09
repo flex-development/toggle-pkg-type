@@ -151,7 +151,7 @@
     "vite": "4.1.4",
     "vite-tsconfig-paths": "4.0.5",
     "vitest": "0.28.5",
-    "yaml-eslint-parser": "1.1.0"
+    "yaml-eslint-parser": "1.2.0"
   },
   "resolutions": {
     "@ardatan/sync-fetch": "larsgw/sync-fetch#head=worker_threads",
