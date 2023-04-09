@@ -1292,7 +1292,7 @@ __metadata:
     is-ci: "npm:3.0.1"
     jsonc-eslint-parser: "npm:2.2.0"
     lint-staged: "npm:13.2.1"
-    memfs: "npm:3.4.13"
+    memfs: "npm:3.5.0"
     mri: "npm:1.2.0"
     node-notifier: "npm:10.0.1"
     pkg-size: "npm:2.4.0"
@@ -6184,12 +6184,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"memfs@npm:3.4.13":
-  version: 3.4.13
-  resolution: "memfs@npm:3.4.13"
+"memfs@npm:3.5.0":
+  version: 3.5.0
+  resolution: "memfs@npm:3.5.0"
   dependencies:
     fs-monkey: "npm:^1.0.3"
-  checksum: 676de79f8ab10106eea5d12900e7334a47276eade5cec545b21bb0d26aa6b9e471a7513203c47a066a666b7fdec48e3a3e5e2cffc0ac051fc745fefc3947d0b9
+  checksum: 177b78b58698d46e63fcbf00d4a85c14d303b88db9ba9da303d91ebf47349ab3ed8f1e134c4c27fdd6c885c0a71c1b128f8c6ae1c7ef0cbc28b95aeac9a28244
   languageName: node
   linkType: hard
 
