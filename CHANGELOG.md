@@ -1,3 +1,57 @@
+## [2.0.0](https://github.com/flex-development/toggle-pkg-type/compare/1.1.1...2.0.0) (2023-04-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* **nvm:** require `>=16.20.0`
+
+### :package: Build
+
+* **deps-dev:** Bump @commitlint/cli from 17.4.4 to 17.5.1 ([#76](https://github.com/flex-development/toggle-pkg-type/issues/76)) ([b8172e6](https://github.com/flex-development/toggle-pkg-type/commit/b8172e65fa0f3a628c6e9527d55cd3f25cc27501))
+* **deps-dev:** Bump @flex-development/mkbuild from 1.0.0-alpha.13 to 1.0.0-alpha.14 ([#34](https://github.com/flex-development/toggle-pkg-type/issues/34)) ([1b6684b](https://github.com/flex-development/toggle-pkg-type/commit/1b6684bc7a140384b7ca80e96f902ecea3afe3d8))
+* **deps-dev:** Bump @flex-development/mkbuild from 1.0.0-alpha.14 to 1.0.0-alpha.16 ([#49](https://github.com/flex-development/toggle-pkg-type/issues/49)) ([8eac365](https://github.com/flex-development/toggle-pkg-type/commit/8eac36524102d5bdfef3c9f45edcf5450569b0a4))
+* **deps-dev:** Bump @graphql-eslint/eslint-plugin from 3.16.0 to 3.16.1 ([#40](https://github.com/flex-development/toggle-pkg-type/issues/40)) ([2153b2c](https://github.com/flex-development/toggle-pkg-type/commit/2153b2c2386a8049381d4ef83424d05f0b2d1fad))
+* **deps-dev:** Bump @typescript-eslint/eslint-plugin from 5.53.0 to 5.54.1 ([#43](https://github.com/flex-development/toggle-pkg-type/issues/43)) ([c263a1c](https://github.com/flex-development/toggle-pkg-type/commit/c263a1cffcd686d68d2b16fe7528ab06f1703614))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin from 5.54.1 to 5.57.1 ([cea0629](https://github.com/flex-development/toggle-pkg-type/commit/cea0629245822823f1dc21a1c81c23da26e185ea))
+* **deps-dev:** Bump @typescript-eslint/parser from 5.53.0 to 5.54.1 ([#44](https://github.com/flex-development/toggle-pkg-type/issues/44)) ([17b3b7e](https://github.com/flex-development/toggle-pkg-type/commit/17b3b7e54de6234d4d0326920f7d1c1adbc8345b))
+* **deps-dev:** Bump @typescript-eslint/parser from 5.54.1 to 5.56.0 ([#67](https://github.com/flex-development/toggle-pkg-type/issues/67)) ([4d83217](https://github.com/flex-development/toggle-pkg-type/commit/4d8321787f4613476c914ce9e4355bff26e790b8))
+* **deps-dev:** bump @typescript-eslint/parser from 5.56.0 to 5.57.1 ([3240c06](https://github.com/flex-development/toggle-pkg-type/commit/3240c06ba6d903ab7dc1cd3a3bb4a9d93c3d94b3))
+* **deps-dev:** Bump @vitest/ui from 0.28.5 to 0.29.2 ([#46](https://github.com/flex-development/toggle-pkg-type/issues/46)) ([01291a4](https://github.com/flex-development/toggle-pkg-type/commit/01291a4b9eba04bd354b96d6647ee55dc3520685))
+* **deps-dev:** Bump cspell from 6.26.3 to 6.28.0 ([#42](https://github.com/flex-development/toggle-pkg-type/issues/42)) ([b4f20b5](https://github.com/flex-development/toggle-pkg-type/commit/b4f20b5f5dc4e4cc57b47f4e0432fca97a6111ee))
+* **deps-dev:** Bump cspell from 6.28.0 to 6.30.2 ([#70](https://github.com/flex-development/toggle-pkg-type/issues/70)) ([efc8c6c](https://github.com/flex-development/toggle-pkg-type/commit/efc8c6cfd3a6b0a9d7de9643cd30a76d81d84755))
+* **deps-dev:** Bump esbuild from 0.17.10 to 0.17.11 ([#54](https://github.com/flex-development/toggle-pkg-type/issues/54)) ([5d5442a](https://github.com/flex-development/toggle-pkg-type/commit/5d5442adcb80ef826ceab6e8689b464f2c89409f))
+* **deps-dev:** Bump esbuild from 0.17.11 to 0.17.12 ([#73](https://github.com/flex-development/toggle-pkg-type/issues/73)) ([77fc972](https://github.com/flex-development/toggle-pkg-type/commit/77fc97293a21a191d5bfc718a28cb4d94e02f70f))
+* **deps-dev:** Bump eslint from 8.34.0 to 8.35.0 ([#51](https://github.com/flex-development/toggle-pkg-type/issues/51)) ([a24b21d](https://github.com/flex-development/toggle-pkg-type/commit/a24b21da6815c7f673085614dc9fb3eec4bd21de))
+* **deps-dev:** Bump eslint-config-prettier from 8.6.0 to 8.7.0 ([#48](https://github.com/flex-development/toggle-pkg-type/issues/48)) ([ebb5665](https://github.com/flex-development/toggle-pkg-type/commit/ebb56651f995d12249f3b7e4893348a3ef6aeb75))
+* **deps-dev:** Bump eslint-plugin-jsdoc from 40.0.0 to 40.0.1 ([#47](https://github.com/flex-development/toggle-pkg-type/issues/47)) ([301ac90](https://github.com/flex-development/toggle-pkg-type/commit/301ac90f323053f4469c26284fe12dc7f949504b))
+* **deps-dev:** Bump eslint-plugin-jsonc from 2.6.0 to 2.7.0 ([#79](https://github.com/flex-development/toggle-pkg-type/issues/79)) ([9253989](https://github.com/flex-development/toggle-pkg-type/commit/9253989f3b7c59cd127b808b6ebcfacfe861bdb1))
+* **deps-dev:** Bump eslint-plugin-markdownlint from 0.4.0 to 0.4.1 ([#50](https://github.com/flex-development/toggle-pkg-type/issues/50)) ([09e9f9a](https://github.com/flex-development/toggle-pkg-type/commit/09e9f9ab079a5a01f84527f0790d626a210df717))
+* **deps-dev:** Bump graphql-config from 4.4.1 to 4.5.0 ([#53](https://github.com/flex-development/toggle-pkg-type/issues/53)) ([25e0ae5](https://github.com/flex-development/toggle-pkg-type/commit/25e0ae55d34db3ccc3fa9527cd434b2f49cff468))
+* **deps-dev:** Bump jsonc-eslint-parser from 2.1.0 to 2.2.0 ([#56](https://github.com/flex-development/toggle-pkg-type/issues/56)) ([f0d4807](https://github.com/flex-development/toggle-pkg-type/commit/f0d48077fd6bc0789eccbfb50daa755ffca518a5))
+* **deps-dev:** Bump lint-staged from 13.1.2 to 13.2.0 ([#60](https://github.com/flex-development/toggle-pkg-type/issues/60)) ([ff48c04](https://github.com/flex-development/toggle-pkg-type/commit/ff48c04864eb064e6addeeebd4344b6a885ed7f8))
+* **deps-dev:** Bump memfs from 3.4.13 to 3.5.0 ([#86](https://github.com/flex-development/toggle-pkg-type/issues/86)) ([b9daf02](https://github.com/flex-development/toggle-pkg-type/commit/b9daf02f381acc98b7fd252025ad975dcc3c6a1a))
+* **deps-dev:** Bump vite from 4.1.3 to 4.1.4 ([#35](https://github.com/flex-development/toggle-pkg-type/issues/35)) ([55a50b3](https://github.com/flex-development/toggle-pkg-type/commit/55a50b3055080e9d739edbbbf481508d82771df1))
+* **deps:** Bump @flex-development/mlly from 1.0.0-alpha.13 to 1.0.0-alpha.15 ([#45](https://github.com/flex-development/toggle-pkg-type/issues/45)) ([12f1ea7](https://github.com/flex-development/toggle-pkg-type/commit/12f1ea78b366902bb1141c537d0af7753af95265))
+* **nvm:** require `>=16.20.0` ([7664534](https://github.com/flex-development/toggle-pkg-type/commit/7664534eca78a9ee918d200603ea117e7c60c59c))
+
+
+### :robot: Continuous Integration
+
+* **deps:** Bump actions/add-to-project from 0.4.0 to 0.4.1 ([#36](https://github.com/flex-development/toggle-pkg-type/issues/36)) ([572d779](https://github.com/flex-development/toggle-pkg-type/commit/572d779e9302e9c23a2f3f622c57564c4e474d25))
+* **deps:** Bump actions/add-to-project from 0.4.1 to 0.5.0 ([#82](https://github.com/flex-development/toggle-pkg-type/issues/82)) ([f0f8df2](https://github.com/flex-development/toggle-pkg-type/commit/f0f8df2bfba4490b631e72484e1fdb777e9906af))
+* **deps:** Bump actions/cache from 3.2.6 to 3.3.1 ([#61](https://github.com/flex-development/toggle-pkg-type/issues/61)) ([18bfe04](https://github.com/flex-development/toggle-pkg-type/commit/18bfe040d91c2ca6caab0a383b779e83e180dec4))
+* **deps:** Bump actions/checkout from 3.3.0 to 3.4.0 ([#63](https://github.com/flex-development/toggle-pkg-type/issues/63)) ([c1486b2](https://github.com/flex-development/toggle-pkg-type/commit/c1486b288d5982fcb7e9b0e6221c043acaed1439))
+* **deps:** Bump actions/checkout from 3.4.0 to 3.5.0 ([#75](https://github.com/flex-development/toggle-pkg-type/issues/75)) ([880fac6](https://github.com/flex-development/toggle-pkg-type/commit/880fac62d16ac7ab3424bd5dfdc961caa472f3a0))
+* **deps:** Bump actions/github-script from 6.4.0 to 6.4.1 ([#83](https://github.com/flex-development/toggle-pkg-type/issues/83)) ([d174c50](https://github.com/flex-development/toggle-pkg-type/commit/d174c50a7704b4d4271b46c050c148ddda2cc549))
+* **workflows:** add `auto-merge` ([edc7891](https://github.com/flex-development/toggle-pkg-type/commit/edc78911d11b4242880faf58fbf8152432eee784))
+* **workflows:** add `cache-cleanup` ([12662c0](https://github.com/flex-development/toggle-pkg-type/commit/12662c08a05cd85bb82a722813060f889918d0c8))
+* **workflows:** add `infrastructure` ([9f35191](https://github.com/flex-development/toggle-pkg-type/commit/9f35191cd1a91f4494212e25e46ea6164e914f64))
+
+
+### :house_with_garden: Housekeeping
+
+* sync config files ([a6ea994](https://github.com/flex-development/toggle-pkg-type/commit/a6ea994949a1cf952ca6c2305bbcc68a7cbf003c))
+
 ## [1.1.1](https://github.com/flex-development/toggle-pkg-type/compare/1.1.0...1.1.1) (2023-02-22)
 
 
