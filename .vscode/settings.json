@@ -2,6 +2,16 @@
   "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
+  "[github-actions-workflow]": {
+    "editor.rulers": [
+      {
+        "color": "var(--vscode-editorRuler-foreground)",
+        "column": 100
+      }
+    ],
+    "editor.wordWrapColumn": 100,
+    "rewrap.wrappingColumn": 100
+  },
   "[handlebars]": {
     "editor.defaultFormatter": "Greenbyte.handlebars-preview",
     "editor.rulers": [
@@ -115,6 +125,7 @@
   "debug.showBreakpointsInOverviewRuler": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
+  "dotenv.enableAutocloaking": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.autoClosingBrackets": "always",
   "editor.bracketPairColorization.enabled": true,
@@ -181,6 +192,7 @@
     "yaml"
   ],
   "files.associations": {
+    "*.log": "log",
     "*.snap": "jest-snapshot",
     ".env.zsh": "shellscript",
     ".markdownlintignore": "ignore",
@@ -300,6 +312,11 @@
   ],
   "vsicons.associations.files": [
     {
+      "extensions": [".commitlintrc.cts"],
+      "format": "svg",
+      "icon": "commitlint"
+    },
+    {
       "extensions": [".eslintrc.base.cjs"],
       "format": "svg",
       "icon": "eslint"
@@ -310,7 +327,7 @@
       "icon": "graphql"
     },
     {
-      "extensions": ["build.json", "typecheck.json"],
+      "extensions": ["build.json", "cjs.json", "typecheck.json"],
       "format": "svg",
       "icon": "tsconfig"
     },

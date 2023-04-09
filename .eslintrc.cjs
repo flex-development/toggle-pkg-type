@@ -10,15 +10,6 @@
  */
 const config = {
   extends: ['./.eslintrc.base.cjs'],
-  overrides: [
-    ...require('./.eslintrc.base.cjs').overrides,
-    {
-      files: ['src/toggle.ts'],
-      rules: {
-        'unicorn/prefer-json-parse-buffer': 0
-      }
-    }
-  ],
   root: true
 }
 

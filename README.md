@@ -1,5 +1,6 @@
 # toggle-pkg-type
 
+[![github release](https://img.shields.io/github/v/release/flex-development/toggle-pkg-type.svg?include_prereleases&sort=semver)](https://github.com/flex-development/toggle-pkg-type/releases/latest)
 [![npm](https://img.shields.io/npm/v/@flex-development/toggle-pkg-type.svg)](https://npmjs.com/package/@flex-development/toggle-pkg-type)
 [![codecov](https://codecov.io/gh/flex-development/toggle-pkg-type/branch/main/graph/badge.svg?token=TSNEYCXRO3)](https://codecov.io/gh/flex-development/toggle-pkg-type)
 [![module type: esm](https://img.shields.io/badge/module%20type-esm-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
