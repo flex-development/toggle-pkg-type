@@ -144,7 +144,7 @@
     "is-ci": "3.0.1",
     "jsonc-eslint-parser": "2.2.0",
     "lint-staged": "13.2.1",
-    "memfs": "3.4.13",
+    "memfs": "3.5.0",
     "mri": "1.2.0",
     "node-notifier": "10.0.1",
     "pkg-size": "2.4.0",
