@@ -5,6 +5,7 @@
   "keywords": [
     "cjs",
     "commonjs",
+    "default-exports",
     "esbuild",
     "esm",
     "interop",
