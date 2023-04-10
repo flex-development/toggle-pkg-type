@@ -31,10 +31,12 @@ on:
 permissions:
   actions: write
 env:
+  BRANCH: |
+    ${{ github.event.number && format('refs/pull/{0}/merge', github.event.number) || github.ref }}
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 concurrency:
   cancel-in-progress: true
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ format('refs/heads/{0}', github.head_ref || github.ref_name) }}
 jobs:
   cache-cleanup:
     runs-on: ubuntu-latest
@@ -52,14 +54,14 @@ jobs:
         name: Install actions/gh-actions-cache
         run: gh extension install actions/gh-actions-cache
       - id: cleanup
-        name: Delete caches${{ !inputs.all && format(' created by {0}', github.ref_name) || '' }}
+        name: Delete caches${{ !inputs.all && format(' created by {0}', env.BRANCH) || '' }}
         env:
-          BRANCH_FILTER: ${{ !inputs.all && format('--branch {0}', github.ref) || '' }}
+          BRANCH_FILTER: ${{ !inputs.all && format('--branch {0}', env.BRANCH) || '' }}
         run: |
           # prevent workflow failure while deleting cache keys
           set +e
 
-          # delete all caches or caches created by ${{ github.ref_name }}
+          # delete all caches or caches created by ${{ env.BRANCH }}
           for key in $(gh actions-cache list $BRANCH_FILTER --limit 100 | cut -f 1); do
             gh actions-cache delete $key $BRANCH_FILTER --confirm
           done
