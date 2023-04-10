@@ -421,6 +421,7 @@ const config = {
               'maximum',
               'minimum',
               'next',
+              'packageManager',
               'visibleName'
             ],
             jsxTags: false
@@ -1128,7 +1129,11 @@ const config = {
       }
     },
     {
-      files: ['.github/dependabot.yml', '.github/workflows/*.yml'],
+      files: [
+        '.github/dependabot.yml',
+        '.github/workflows/*.yml',
+        'action.yml'
+      ],
       rules: {
         'yml/sort-keys': 0
       }
@@ -1190,6 +1195,10 @@ const config = {
         next: {
           name: 'namepath-defining',
           required: ['type']
+        },
+        packageManager: {
+          name: 'text',
+          required: ['name']
         },
         param: {
           name: 'namepath-defining',

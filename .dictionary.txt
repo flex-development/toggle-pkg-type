@@ -3,7 +3,6 @@ bdougie
 cefc
 codecov
 commitlintrc
-dawidd
 dedupe
 dessant
 dohm
