@@ -1309,7 +1309,7 @@ __metadata:
     vite-tsconfig-paths: "npm:4.2.0"
     vitest: "npm:0.31.1"
     vitest-github-actions-reporter: "npm:0.10.0"
-    yaml-eslint-parser: "npm:1.2.0"
+    yaml-eslint-parser: "npm:1.2.2"
   bin:
     toggle-pkg-type: ./dist/cli.mjs
   languageName: unknown
@@ -9223,25 +9223,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml-eslint-parser@npm:1.2.0":
-  version: 1.2.0
-  resolution: "yaml-eslint-parser@npm:1.2.0"
+"yaml-eslint-parser@npm:1.2.2, yaml-eslint-parser@npm:^1.2.1":
+  version: 1.2.2
+  resolution: "yaml-eslint-parser@npm:1.2.2"
   dependencies:
     eslint-visitor-keys: "npm:^3.0.0"
     lodash: "npm:^4.17.21"
     yaml: "npm:^2.0.0"
-  checksum: 9892830884874c4c03d57369e6bd93f4fe6855ad06d590a94dac5a954f137af70f1411a428290bbb34a1ff1ce1074569c497fccd783bca5b274c70f988383f0e
-  languageName: node
-  linkType: hard
-
-"yaml-eslint-parser@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "yaml-eslint-parser@npm:1.2.1"
-  dependencies:
-    eslint-visitor-keys: "npm:^3.0.0"
-    lodash: "npm:^4.17.21"
-    yaml: "npm:^2.0.0"
-  checksum: 2a2117d65bcb07ba658cfa675e21a00f0d29e70df8075abd50656b2b855c2b076acc1a55cb104c9562da8d70499d3d8d93d02924397b7c5177252aa73e3d8bde
+  checksum: 1f13ad1a783943f0e277222a48cb3843b83722e6a2f52cec83a815579930c8bf60069d3e0f12bdb8c55ac0d8e29f340804b0b949cc7e6cea9d11076f38bd24cd
   languageName: node
   linkType: hard
 
