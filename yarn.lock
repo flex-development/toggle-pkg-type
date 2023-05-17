@@ -9223,7 +9223,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml-eslint-parser@npm:1.2.2":
+"yaml-eslint-parser@npm:1.2.2, yaml-eslint-parser@npm:^1.2.1":
   version: 1.2.2
   resolution: "yaml-eslint-parser@npm:1.2.2"
   dependencies:
@@ -9231,17 +9231,6 @@ __metadata:
     lodash: "npm:^4.17.21"
     yaml: "npm:^2.0.0"
   checksum: 1f13ad1a783943f0e277222a48cb3843b83722e6a2f52cec83a815579930c8bf60069d3e0f12bdb8c55ac0d8e29f340804b0b949cc7e6cea9d11076f38bd24cd
-  languageName: node
-  linkType: hard
-
-"yaml-eslint-parser@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "yaml-eslint-parser@npm:1.2.1"
-  dependencies:
-    eslint-visitor-keys: "npm:^3.0.0"
-    lodash: "npm:^4.17.21"
-    yaml: "npm:^2.0.0"
-  checksum: 2a2117d65bcb07ba658cfa675e21a00f0d29e70df8075abd50656b2b855c2b076acc1a55cb104c9562da8d70499d3d8d93d02924397b7c5177252aa73e3d8bde
   languageName: node
   linkType: hard
 
