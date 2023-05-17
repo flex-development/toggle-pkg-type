@@ -160,7 +160,7 @@
     "vite-tsconfig-paths": "4.2.0",
     "vitest": "0.31.1",
     "vitest-github-actions-reporter": "0.10.0",
-    "yaml-eslint-parser": "1.2.0"
+    "yaml-eslint-parser": "1.2.2"
   },
   "resolutions": {
     "@ardatan/sync-fetch": "larsgw/sync-fetch#head=worker_threads",
