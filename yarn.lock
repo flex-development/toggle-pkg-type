@@ -1258,7 +1258,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:5.59.8"
     "@vates/toggle-scripts": "npm:1.0.0"
     "@vitest/coverage-c8": "npm:0.31.3"
-    "@vitest/ui": "npm:0.31.3"
+    "@vitest/ui": "npm:0.31.4"
     add-stream: "npm:1.0.0"
     chai: "npm:4.3.7"
     conventional-changelog: "npm:3.1.25"
@@ -2343,11 +2343,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/ui@npm:0.31.3":
-  version: 0.31.3
-  resolution: "@vitest/ui@npm:0.31.3"
+"@vitest/ui@npm:0.31.4":
+  version: 0.31.4
+  resolution: "@vitest/ui@npm:0.31.4"
   dependencies:
-    "@vitest/utils": "npm:0.31.3"
+    "@vitest/utils": "npm:0.31.4"
     fast-glob: "npm:^3.2.12"
     fflate: "npm:^0.7.4"
     flatted: "npm:^3.2.7"
@@ -2356,7 +2356,7 @@ __metadata:
     sirv: "npm:^2.0.3"
   peerDependencies:
     vitest: ">=0.30.1 <1"
-  checksum: c69249840707605926a235e6549fae328c996476a70e0af95f16c06d7a328aed460af11986b236786fa2d6992bbad4f1445830b76d143e2170a4f47764e4a6f4
+  checksum: f41a12bdc5b5086de727d2e9292b4403a6bff31925a20bfa4003875c8fcf587dd744a355ed1db8006bf6635dae08ffd121f47ba424cfaacd3dffecb6c3181d9b
   languageName: node
   linkType: hard
 
@@ -2371,14 +2371,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/utils@npm:0.31.3":
-  version: 0.31.3
-  resolution: "@vitest/utils@npm:0.31.3"
+"@vitest/utils@npm:0.31.4":
+  version: 0.31.4
+  resolution: "@vitest/utils@npm:0.31.4"
   dependencies:
     concordance: "npm:^5.0.4"
     loupe: "npm:^2.3.6"
     pretty-format: "npm:^27.5.1"
-  checksum: 0efddf0c2542f5ba90bf88aa3bdb472d4cd2fefe79dcfa72f460890c387aa7e6e9d06d876163742a565335f01a1a8fbbbf003a904ae5d44003f0f5e681535047
+  checksum: 98743715a2f582c16c63b1609c9e109a79a9fdbff916213b15a182072c68b44cc02fa6619c219798bf9a0ffbcf54413e7f48c710d473eb7c42696dcca04c15e9
   languageName: node
   linkType: hard
 
