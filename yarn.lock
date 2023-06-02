@@ -1257,7 +1257,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:5.59.8"
     "@typescript-eslint/parser": "npm:5.59.8"
     "@vates/toggle-scripts": "npm:1.0.0"
-    "@vitest/coverage-c8": "npm:0.31.3"
+    "@vitest/coverage-c8": "npm:0.31.4"
     "@vitest/ui": "npm:0.31.4"
     add-stream: "npm:1.0.0"
     chai: "npm:4.3.7"
@@ -2285,9 +2285,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-c8@npm:0.31.3":
-  version: 0.31.3
-  resolution: "@vitest/coverage-c8@npm:0.31.3"
+"@vitest/coverage-c8@npm:0.31.4":
+  version: 0.31.4
+  resolution: "@vitest/coverage-c8@npm:0.31.4"
   dependencies:
     "@ampproject/remapping": "npm:^2.2.1"
     c8: "npm:^7.13.0"
@@ -2296,7 +2296,7 @@ __metadata:
     std-env: "npm:^3.3.2"
   peerDependencies:
     vitest: ">=0.30.0 <1"
-  checksum: a8f2e64e74100768f0758f7c2c834df4f12feca7eab102fb39d15255045f73bcc139e024eb1d0e56a23dd237c79d147e75d064c90ea0e89fa5593993bcaa0711
+  checksum: b11114b7b888ed79af8a7f7088d27dd48088543a488eaf8b6b9f750e0a3c7ed2a713cb9389065e18dbd78cfd4c882e6a7c2058ac62a3975be70e1f5031eb8f6b
   languageName: node
   linkType: hard
 
