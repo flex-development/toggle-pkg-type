@@ -112,7 +112,7 @@
     "@vitest/ui": "0.31.4",
     "add-stream": "1.0.0",
     "chai": "4.3.7",
-    "conventional-changelog": "3.1.25",
+    "conventional-changelog": "4.0.0",
     "conventional-changelog-conventionalcommits": "5.0.0",
     "conventional-changelog-core": "4.2.4",
     "conventional-changelog-writer": "5.0.1",
