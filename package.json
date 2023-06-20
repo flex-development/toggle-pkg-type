@@ -114,7 +114,7 @@
     "chai": "4.3.7",
     "conventional-changelog": "4.0.0",
     "conventional-changelog-conventionalcommits": "5.0.0",
-    "conventional-changelog-core": "4.2.4",
+    "conventional-changelog-core": "5.0.1",
     "conventional-changelog-writer": "5.0.1",
     "conventional-recommended-bump": "7.0.1",
     "cross-env": "7.0.3",
