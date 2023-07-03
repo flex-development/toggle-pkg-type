@@ -2529,16 +2529,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.4.1, acorn@npm:^8.5.0, acorn@npm:^8.8.0, acorn@npm:^8.8.2":
-  version: 8.8.2
-  resolution: "acorn@npm:8.8.2"
-  bin:
-    acorn: bin/acorn
-  checksum: 5a47325f0aa08202080cb167d5b8103720d8a1d199f57988afa48bdfbc3c9973270b00e38c2c874240a49929625beaaae8c4ec683f5272b5f07f1119a457e5d0
-  languageName: node
-  linkType: hard
-
-"acorn@npm:^8.9.0":
+"acorn@npm:^8.4.1, acorn@npm:^8.5.0, acorn@npm:^8.8.0, acorn@npm:^8.8.2, acorn@npm:^8.9.0":
   version: 8.9.0
   resolution: "acorn@npm:8.9.0"
   bin:
@@ -6626,19 +6617,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mlly@npm:^1.1.1, mlly@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "mlly@npm:1.2.0"
-  dependencies:
-    acorn: "npm:^8.8.2"
-    pathe: "npm:^1.1.0"
-    pkg-types: "npm:^1.0.2"
-    ufo: "npm:^1.1.1"
-  checksum: 4e0e4b9a1b25d0184d6e5af621a3b7e94f2339e5fcb3b478494b52eae0fba33a48a3f5ccd4d6238ed386e4d91eb79e4d8334a438bd6ddd9b65518f73de71fe88
-  languageName: node
-  linkType: hard
-
-"mlly@npm:^1.4.0":
+"mlly@npm:^1.2.0, mlly@npm:^1.4.0":
   version: 1.4.0
   resolution: "mlly@npm:1.4.0"
   dependencies:
@@ -7223,14 +7202,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pathe@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "pathe@npm:1.1.0"
-  checksum: 467cb4c0813dc810c8cd056c7c54ef628eb8ff4801057cd9861a8ff2e30143dbdf7e5765e2bd69c7ea65c151b84bbb9956afa9f1802683da2e3ce6565eadaae4
-  languageName: node
-  linkType: hard
-
-"pathe@npm:^1.1.1":
+"pathe@npm:^1.1.0, pathe@npm:^1.1.1":
   version: 1.1.1
   resolution: "pathe@npm:1.1.1"
   checksum: 8bca7eccd68b0076cbcffdc74490cce9515ec88e6d9ba94860a7766a03345170d3d1b36ca43083960dfbd2aa59f9dba0a07e2a27075818da7f19b1cce2985f47
@@ -7303,17 +7275,6 @@ __metadata:
   bin:
     pkg-size: bin/cli.js
   checksum: 808b43d08eb99ce4006fb63446bd15c3bde3a1fdb5d367caf304f46fc19f23a69af7f623419fd1d863d8b9c4b687d4beac5c385b7c1a9ea7edc3ec999c2ce2e1
-  languageName: node
-  linkType: hard
-
-"pkg-types@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "pkg-types@npm:1.0.2"
-  dependencies:
-    jsonc-parser: "npm:^3.2.0"
-    mlly: "npm:^1.1.1"
-    pathe: "npm:^1.1.0"
-  checksum: e5da078c585c235cd3bdbb8a203c6e7620782abd3bb5c617ed6003ca42eacc10e5782f1030bcac2c3cc5c5f03e5989e6b936f5935733cc14b3e50cb83b95eda3
   languageName: node
   linkType: hard
 
@@ -8218,14 +8179,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"std-env@npm:^3.3.2":
-  version: 3.3.2
-  resolution: "std-env@npm:3.3.2"
-  checksum: 383486453a3b34c9db54c3aab112e066f32c6afda55c89362fe56576a82564d60526578040f7fe3ff6173f18c426597cbf1be69be9de83f56b984533aa2c2599
-  languageName: node
-  linkType: hard
-
-"std-env@npm:^3.3.3":
+"std-env@npm:^3.3.2, std-env@npm:^3.3.3":
   version: 3.3.3
   resolution: "std-env@npm:3.3.3"
   checksum: 2bbe0c96d26c37adcd7c6699c35f2e7443ebec701575485729596e53d962301e9909d052e859e47b78fc25ae9a230817fecaf93188f9686461c48067dd3e855b
@@ -8825,13 +8779,6 @@ __metadata:
   version: 1.0.6
   resolution: "uc.micro@npm:1.0.6"
   checksum: 1091718106ef95d70ccb6e81fb3b60a1fedb583e0651dfe9ac125f394e783a7d1f524213a56a70c2822610b65f24a2c03a4414a8322446f52ae1acbae68c392d
-  languageName: node
-  linkType: hard
-
-"ufo@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "ufo@npm:1.1.1"
-  checksum: 46c7403f2ef32569a8de94e5c90a68233f448127c14f25a392aab8d7793662439498432fe88fd351c46b91c19186ce49f53c3c1327eec757f722927e0477d7b2
   languageName: node
   linkType: hard
 
