@@ -1313,9 +1313,9 @@ __metadata:
     add-stream: "npm:1.0.0"
     chai: "npm:5.0.0-alpha.1"
     conventional-changelog: "npm:4.0.0"
-    conventional-changelog-conventionalcommits: "npm:5.0.0"
-    conventional-changelog-core: "npm:5.0.1"
-    conventional-changelog-writer: "npm:5.0.1"
+    conventional-changelog-conventionalcommits: "npm:6.1.0"
+    conventional-changelog-core: "npm:5.0.2"
+    conventional-changelog-writer: "npm:6.0.1"
     conventional-recommended-bump: "npm:7.0.1"
     cross-env: "npm:7.0.3"
     cspell: "npm:6.31.2"
@@ -3444,18 +3444,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "conventional-changelog-conventionalcommits@npm:6.0.0"
+"conventional-changelog-conventionalcommits@npm:6.1.0, conventional-changelog-conventionalcommits@npm:^6.0.0":
+  version: 6.1.0
+  resolution: "conventional-changelog-conventionalcommits@npm:6.1.0"
   dependencies:
     compare-func: "npm:^2.0.0"
-  checksum: e911423fcd6e9f32a74965830673ff6525b8a2e688bd6ae099e1dfe1847c7b32af900248f462037c11ff472dcbe7170345f1294d6fa12863775dba83d56edd33
+  checksum: 75f983f548b0769d2a1f486d6a3cf97426b694bdb13974861ab491fcb03e87c9cf0af031206e7a29c6ec22afb476a97e3ec2f64b3a4cc0b07f6fc257eef3ea9d
   languageName: node
   linkType: hard
 
-"conventional-changelog-core@npm:5.0.1, conventional-changelog-core@npm:^5.0.0":
-  version: 5.0.1
-  resolution: "conventional-changelog-core@npm:5.0.1"
+"conventional-changelog-core@npm:5.0.2, conventional-changelog-core@npm:^5.0.0":
+  version: 5.0.2
+  resolution: "conventional-changelog-core@npm:5.0.2"
   dependencies:
     add-stream: "npm:^1.0.0"
     conventional-changelog-writer: "npm:^6.0.0"
@@ -3468,7 +3468,7 @@ __metadata:
     normalize-package-data: "npm:^3.0.3"
     read-pkg: "npm:^3.0.0"
     read-pkg-up: "npm:^3.0.0"
-  checksum: 405c516808cac80ace9d591b033f5fd53783b7045cbed5620d7f0588c14bd54661b9b175d59a26e164d1b14d3888a308fc18a1d1ac4e08b16805bcced714bbcb
+  checksum: 52c0eb481e637d3322d472706c7e2bba16c1714d8badf004621840cd6a6d9ed643b92e8f3ccefcaa896554d795694e6aa5d9037d37283c706ef7385b0afaeac3
   languageName: node
   linkType: hard
 
@@ -3516,39 +3516,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-writer@npm:5.0.1":
-  version: 5.0.1
-  resolution: "conventional-changelog-writer@npm:5.0.1"
-  dependencies:
-    conventional-commits-filter: "npm:^2.0.7"
-    dateformat: "npm:^3.0.0"
-    handlebars: "npm:^4.7.7"
-    json-stringify-safe: "npm:^5.0.1"
-    lodash: "npm:^4.17.15"
-    meow: "npm:^8.0.0"
-    semver: "npm:^6.0.0"
-    split: "npm:^1.0.0"
-    through2: "npm:^4.0.0"
-  bin:
-    conventional-changelog-writer: cli.js
-  checksum: 8c75386fb6a7a0de0b5101db74b6e64ee88a794d031bfaf1706b1647c59735c06a0875e5976e54512c7e38b7ccd541ba9bf94eb7457c422e1d08ff978c5d2974
-  languageName: node
-  linkType: hard
-
-"conventional-changelog-writer@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "conventional-changelog-writer@npm:6.0.0"
+"conventional-changelog-writer@npm:6.0.1, conventional-changelog-writer@npm:^6.0.0":
+  version: 6.0.1
+  resolution: "conventional-changelog-writer@npm:6.0.1"
   dependencies:
     conventional-commits-filter: "npm:^3.0.0"
     dateformat: "npm:^3.0.3"
     handlebars: "npm:^4.7.7"
     json-stringify-safe: "npm:^5.0.1"
     meow: "npm:^8.1.2"
-    semver: "npm:^6.3.0"
+    semver: "npm:^7.0.0"
     split: "npm:^1.0.1"
   bin:
     conventional-changelog-writer: cli.js
-  checksum: 09757a7136f0fe4708cbec1e0ab2c2e713b60aba21e023f2d1c0d51cfc5e8cb085ddcc1885c9cd51004f156df305bf377783aa9a82045e8fb13a3afe77c412fb
+  checksum: dc8bac7f921b8fbf9ef0af2e782152a2b5640a0e0fa473ce8fd5e8ad4089cc39e902157cd10b10cedadb957f194967b56080338df9abc68f25c208f46f614d2d
   languageName: node
   linkType: hard
 
@@ -3568,16 +3549,6 @@ __metadata:
     conventional-changelog-jshint: "npm:^3.0.0"
     conventional-changelog-preset-loader: "npm:^3.0.0"
   checksum: 2d799fa94a94813579c604b61b0e22ff4a19b073cb04ea5402270ab1213bc435a7661df00985a4f9b3b5c598301eeb19ca4bf3936b8e619c83b73312fcb38126
-  languageName: node
-  linkType: hard
-
-"conventional-commits-filter@npm:^2.0.7":
-  version: 2.0.7
-  resolution: "conventional-commits-filter@npm:2.0.7"
-  dependencies:
-    lodash.ismatch: "npm:^4.4.0"
-    modify-values: "npm:^1.0.0"
-  checksum: 433c256d6dc95cb990c7c26dd421e8cc3697bce0cc0b7cbf14e57144a727aa17a925afcb14100af30047f048b8e27338cb6726032bc5f949199e667f8b627262
   languageName: node
   linkType: hard
 
@@ -3870,7 +3841,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dateformat@npm:^3.0.0, dateformat@npm:^3.0.3":
+"dateformat@npm:^3.0.3":
   version: 3.0.3
   resolution: "dateformat@npm:3.0.3"
   checksum: b88a9e539929e5ef5ac6b0b6d1907fbdaf899868cdd555abbd0204d6b9e4a41533d9190915d860222b25f8714c7d58150b462da7e747904ad10a4a4ceed7a9a5
@@ -7017,7 +6988,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"modify-values@npm:^1.0.0, modify-values@npm:^1.0.1":
+"modify-values@npm:^1.0.1":
   version: 1.0.1
   resolution: "modify-values@npm:1.0.1"
   checksum: e105d01f60cfe4d3f449e97bdffb14df406089fcccebf1484aea1223ca334f047ca2df7378324d060e39b4e3a3d2961e3c4e48423d9703d2898d085ac4e1480a
@@ -8505,7 +8476,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"split@npm:^1.0.0, split@npm:^1.0.1":
+"split@npm:^1.0.1":
   version: 1.0.1
   resolution: "split@npm:1.0.1"
   dependencies:
