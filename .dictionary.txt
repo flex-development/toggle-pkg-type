@@ -30,4 +30,5 @@ preid
 tscu
 unstub
 vates
+vitest
 yarnrc
