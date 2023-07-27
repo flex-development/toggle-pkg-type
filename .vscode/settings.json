@@ -256,6 +256,7 @@
   "shellformat.flag": "-ci -fn -i=2 -sr",
   "shellformat.useEditorConfig": true,
   "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.scrollback": 10000,
   "todo-tree.filtering.ignoreGitSubmodules": true,
   "todo-tree.filtering.includeHiddenFiles": false,
   "todo-tree.filtering.useBuiltInExcludes": "file and search excludes",
