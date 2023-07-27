@@ -91,7 +91,7 @@
     "@flex-development/decorator-regex": "1.0.0",
     "@flex-development/esm-types": "1.0.0",
     "@flex-development/mkbuild": "1.0.0-alpha.20",
-    "@flex-development/pkg-types": "2.0.0",
+    "@flex-development/pkg-types": "3.0.0",
     "@flex-development/tsconfig-utils": "1.1.2",
     "@graphql-eslint/eslint-plugin": "3.20.1",
     "@types/chai": "4.3.5",
