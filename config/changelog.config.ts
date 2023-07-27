@@ -154,7 +154,6 @@ sade('changelog', true)
     const changelog: Readable = conventionalChangelog<Commit>(
       {
         append: false,
-        debug: debug ? console.debug.bind(console) : undefined,
         outputUnreleased:
           typeof outputUnreleased === 'boolean'
             ? outputUnreleased
