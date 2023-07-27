@@ -3444,7 +3444,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:6.1.0":
+"conventional-changelog-conventionalcommits@npm:6.1.0, conventional-changelog-conventionalcommits@npm:^6.0.0":
   version: 6.1.0
   resolution: "conventional-changelog-conventionalcommits@npm:6.1.0"
   dependencies:
@@ -3453,16 +3453,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "conventional-changelog-conventionalcommits@npm:6.0.0"
-  dependencies:
-    compare-func: "npm:^2.0.0"
-  checksum: e911423fcd6e9f32a74965830673ff6525b8a2e688bd6ae099e1dfe1847c7b32af900248f462037c11ff472dcbe7170345f1294d6fa12863775dba83d56edd33
-  languageName: node
-  linkType: hard
-
-"conventional-changelog-core@npm:5.0.2":
+"conventional-changelog-core@npm:5.0.2, conventional-changelog-core@npm:^5.0.0":
   version: 5.0.2
   resolution: "conventional-changelog-core@npm:5.0.2"
   dependencies:
@@ -3478,25 +3469,6 @@ __metadata:
     read-pkg: "npm:^3.0.0"
     read-pkg-up: "npm:^3.0.0"
   checksum: 52c0eb481e637d3322d472706c7e2bba16c1714d8badf004621840cd6a6d9ed643b92e8f3ccefcaa896554d795694e6aa5d9037d37283c706ef7385b0afaeac3
-  languageName: node
-  linkType: hard
-
-"conventional-changelog-core@npm:^5.0.0":
-  version: 5.0.1
-  resolution: "conventional-changelog-core@npm:5.0.1"
-  dependencies:
-    add-stream: "npm:^1.0.0"
-    conventional-changelog-writer: "npm:^6.0.0"
-    conventional-commits-parser: "npm:^4.0.0"
-    dateformat: "npm:^3.0.3"
-    get-pkg-repo: "npm:^4.2.1"
-    git-raw-commits: "npm:^3.0.0"
-    git-remote-origin-url: "npm:^2.0.0"
-    git-semver-tags: "npm:^5.0.0"
-    normalize-package-data: "npm:^3.0.3"
-    read-pkg: "npm:^3.0.0"
-    read-pkg-up: "npm:^3.0.0"
-  checksum: 405c516808cac80ace9d591b033f5fd53783b7045cbed5620d7f0588c14bd54661b9b175d59a26e164d1b14d3888a308fc18a1d1ac4e08b16805bcced714bbcb
   languageName: node
   linkType: hard
 
@@ -3544,7 +3516,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-writer@npm:6.0.1":
+"conventional-changelog-writer@npm:6.0.1, conventional-changelog-writer@npm:^6.0.0":
   version: 6.0.1
   resolution: "conventional-changelog-writer@npm:6.0.1"
   dependencies:
@@ -3558,23 +3530,6 @@ __metadata:
   bin:
     conventional-changelog-writer: cli.js
   checksum: dc8bac7f921b8fbf9ef0af2e782152a2b5640a0e0fa473ce8fd5e8ad4089cc39e902157cd10b10cedadb957f194967b56080338df9abc68f25c208f46f614d2d
-  languageName: node
-  linkType: hard
-
-"conventional-changelog-writer@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "conventional-changelog-writer@npm:6.0.0"
-  dependencies:
-    conventional-commits-filter: "npm:^3.0.0"
-    dateformat: "npm:^3.0.3"
-    handlebars: "npm:^4.7.7"
-    json-stringify-safe: "npm:^5.0.1"
-    meow: "npm:^8.1.2"
-    semver: "npm:^6.3.0"
-    split: "npm:^1.0.1"
-  bin:
-    conventional-changelog-writer: cli.js
-  checksum: 09757a7136f0fe4708cbec1e0ab2c2e713b60aba21e023f2d1c0d51cfc5e8cb085ddcc1885c9cd51004f156df305bf377783aa9a82045e8fb13a3afe77c412fb
   languageName: node
   linkType: hard
 
