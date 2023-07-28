@@ -1338,7 +1338,7 @@ __metadata:
     eslint-plugin-jest-formatting: "npm:3.1.0"
     eslint-plugin-jsdoc: "npm:44.1.0"
     eslint-plugin-jsonc: "npm:2.9.0"
-    eslint-plugin-markdown: "npm:3.0.0"
+    eslint-plugin-markdown: "npm:3.0.1"
     eslint-plugin-markdownlint: "npm:0.4.1"
     eslint-plugin-node: "npm:11.1.0"
     eslint-plugin-prettier: "npm:5.0.0"
@@ -4715,14 +4715,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-markdown@npm:3.0.0":
-  version: 3.0.0
-  resolution: "eslint-plugin-markdown@npm:3.0.0"
+"eslint-plugin-markdown@npm:3.0.1":
+  version: 3.0.1
+  resolution: "eslint-plugin-markdown@npm:3.0.1"
   dependencies:
     mdast-util-from-markdown: "npm:^0.8.5"
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-  checksum: ddc88a2fd1d707d83d4be7ed2b2f189a575d455f233ce53639cbffa80d9e8afbbc6f97bc1e161e22bdb0687ad94caab77cf9d39fca98d790b47ffa9e56602ced
+  checksum: bf2a966987d41d3e8a4c13c25ec93751a9289c319297f6a6fbd1c5fe9e4bd79efbefe05225e32941349ff5f31b634cace51ceeed55cee50d4edb84590981c4a8
   languageName: node
   linkType: hard
 
