@@ -1364,7 +1364,7 @@ __metadata:
     mri: "npm:1.2.0"
     node-notifier: "npm:10.0.1"
     pkg-size: "npm:2.4.0"
-    prettier: "npm:3.0.0"
+    prettier: "npm:3.0.1"
     prettier-plugin-sh: "npm:0.13.1"
     sade: "npm:1.8.1"
     semver: "npm:7.5.4"
@@ -8091,12 +8091,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.0.0":
-  version: 3.0.0
-  resolution: "prettier@npm:3.0.0"
+"prettier@npm:3.0.1":
+  version: 3.0.1
+  resolution: "prettier@npm:3.0.1"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 924c5101c4f333df35244416770fde5236246be31e9a309d0f557c53afc50cb8a38eea791a93ae2a3bc71688358e3f53f989a9dab89664302aced036a90900ac
+  checksum: b0042eba0138b37bfffb9a0fee5ae3d5bf2ab34a102329bd7e8d7388fd937c290820add1e2280bae8e3117664c755054fa669bd225ce5a100aeef86741830604
   languageName: node
   linkType: hard
 
