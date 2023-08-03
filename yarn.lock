@@ -1339,7 +1339,7 @@ __metadata:
     dateformat: "npm:5.0.3"
     esbuild: "npm:0.18.17"
     eslint: "npm:8.46.0"
-    eslint-config-prettier: "npm:8.9.0"
+    eslint-config-prettier: "npm:8.10.0"
     eslint-import-resolver-typescript: "npm:3.5.5"
     eslint-plugin-chai-expect: "npm:3.0.0"
     eslint-plugin-import: "npm:2.28.0"
@@ -4597,14 +4597,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:8.9.0":
-  version: 8.9.0
-  resolution: "eslint-config-prettier@npm:8.9.0"
+"eslint-config-prettier@npm:8.10.0":
+  version: 8.10.0
+  resolution: "eslint-config-prettier@npm:8.10.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: b667a01ad220495dfc56ef8f591fdc07df3e73cc26cf10557cd43d42b5c26220a2973f7ecb92cc173a1288baf37358929d438f92767bc093505fab65064fd87c
+  checksum: e907461b85b14216f4b30cfeda677ba36b73fbc2dcf19ad7514a5d635c7495956c9d45228e554411ce0527304aa4dec27c6c278a69401dff4acde5800963c30c
   languageName: node
   linkType: hard
 
