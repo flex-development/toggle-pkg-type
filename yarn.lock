@@ -1360,7 +1360,7 @@ __metadata:
     is-ci: "npm:3.0.1"
     jsonc-eslint-parser: "npm:2.3.0"
     lint-staged: "npm:13.2.3"
-    memfs: "npm:4.2.0"
+    memfs: "npm:4.2.1"
     mri: "npm:1.2.0"
     node-notifier: "npm:10.0.1"
     pkg-size: "npm:2.4.0"
@@ -7081,15 +7081,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"memfs@npm:4.2.0":
-  version: 4.2.0
-  resolution: "memfs@npm:4.2.0"
+"memfs@npm:4.2.1":
+  version: 4.2.1
+  resolution: "memfs@npm:4.2.1"
   dependencies:
     json-joy: "npm:^9.2.0"
     thingies: "npm:^1.11.1"
   peerDependencies:
     tslib: 2
-  checksum: 8eabf13d42620f205abbbc6b9f17ea050ec56aa258f3c8f7227bcf32c29da240b43bad0cbb057bc98ff8e1089aef255274a2957a34fe969d27b0c795befe295c
+  checksum: 19dca83a475d109b8f3c628fc6fcda0486dfe7902ee6c108ec5e699d4915e38cca259717978e8aa555b6f4db155067185f77d209f0d7b145be3b6eb319b3bd93
   languageName: node
   linkType: hard
 
