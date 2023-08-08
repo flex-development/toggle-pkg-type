@@ -1308,7 +1308,7 @@ __metadata:
     "@flex-development/pathe": "npm:1.0.3"
     "@flex-development/pkg-types": "npm:3.0.0"
     "@flex-development/tsconfig-utils": "npm:1.1.2"
-    "@flex-development/tutils": "npm:6.0.0-alpha.14"
+    "@flex-development/tutils": "npm:6.0.0-alpha.16"
     "@graphql-eslint/eslint-plugin": "npm:3.20.1"
     "@types/chai": "npm:4.3.5"
     "@types/conventional-changelog": "npm:3.1.1"
@@ -1413,14 +1413,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flex-development/tutils@npm:6.0.0-alpha.14":
-  version: 6.0.0-alpha.14
-  resolution: "@flex-development/tutils@npm:6.0.0-alpha.14::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Ftutils%2F6.0.0-alpha.14%2F3715445f311171fd0e8215a13ed8b9b66ea14b48"
+"@flex-development/tutils@npm:6.0.0-alpha.16":
+  version: 6.0.0-alpha.16
+  resolution: "@flex-development/tutils@npm:6.0.0-alpha.16::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Ftutils%2F6.0.0-alpha.16%2Fab40c9d4e1f739b4cd32a792feb64feea5f57e5d"
   dependencies:
     dequal: "npm:2.0.3"
   peerDependencies:
     typescript: ">=5.0.4"
-  checksum: 407ff65f0fff7df9cfe87666dde05194444b3d886bf7865c27fe49364bd1cb2e768b56c916dc537e2f7ba6c6705607d430ee7f49a2591f65dbeab8eca3b3cd48
+  checksum: 987fcee38b5ac7f457592ea7956c38e55fdfd811a2dd5395ccb192b3a55990d81cc3a65a46d839e20e3546c89a28bea187f3b5c001a5330855865ae162a9bd06
   languageName: node
   linkType: hard
 
