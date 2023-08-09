@@ -1535,7 +1535,7 @@ __metadata:
     "@flex-development/mlly": "npm:1.0.0-alpha.17"
     "@flex-development/pathe": "npm:1.0.3"
     "@flex-development/pkg-types": "npm:3.0.0"
-    "@flex-development/tsconfig-utils": "npm:1.1.2"
+    "@flex-development/tsconfig-utils": "npm:2.0.1"
     "@flex-development/tutils": "npm:6.0.0-alpha.16"
     "@graphql-eslint/eslint-plugin": "npm:3.20.1"
     "@types/chai": "npm:4.3.5"
@@ -1621,6 +1621,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@flex-development/tsconfig-types@npm:4.0.0":
+  version: 4.0.0
+  resolution: "@flex-development/tsconfig-types@npm:4.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Ftsconfig-types%2F4.0.0%2Fccd30158271cab3f963205a1db7058311412d59a"
+  dependencies:
+    "@flex-development/pkg-types": "npm:3.0.0"
+    "@flex-development/tutils": "npm:6.0.0-alpha.12"
+  checksum: 2c8fd28a8d609a330038e4ddebea1879e271aa5d32c491e5ab6b4ddca625b6f2b850d6e99637711629982f2271778bbba1952c7abf49e592352c4ffad0cf5a1e
+  languageName: node
+  linkType: hard
+
 "@flex-development/tsconfig-utils@npm:1.1.2":
   version: 1.1.2
   resolution: "@flex-development/tsconfig-utils@npm:1.1.2::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Ftsconfig-utils%2F1.1.2%2F3baf871b6bd1b8324c27a9161334825eba052dc6"
@@ -1638,6 +1648,24 @@ __metadata:
     "@types/node": ">=14.18.36"
     typescript: ">=4.7"
   checksum: 4a1e56584279d49a3ac0b47e80c1c71de138ea6846b8e1c8456c42830c6aa6230e3836b07169415aff66f447c434f0c1f0bd668530634b5ddd4a39e547f866d5
+  languageName: node
+  linkType: hard
+
+"@flex-development/tsconfig-utils@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@flex-development/tsconfig-utils@npm:2.0.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Ftsconfig-utils%2F2.0.1%2Fc501ce712cec12d15f99b3a48671a875ddfa9255"
+  dependencies:
+    "@flex-development/errnode": "npm:2.0.0"
+    "@flex-development/mlly": "npm:1.0.0-alpha.17"
+    "@flex-development/pathe": "npm:2.0.0"
+    "@flex-development/tsconfig-types": "npm:4.0.0"
+    "@flex-development/tutils": "npm:6.0.0-alpha.18"
+    strip-bom: "npm:5.0.0"
+    strip-json-comments: "npm:5.0.1"
+  peerDependencies:
+    "@types/node": ">=16.18.23"
+    typescript: ">=4.7"
+  checksum: 68dd216301aa3d7eb9ad37dcaed56eb133f36ef7ede748ffc7d88ceb827346688a5a2198018a872335bcd2f73dbd3fa4852807a7787e19295193bbc330fc77ea
   languageName: node
   linkType: hard
 
@@ -9368,6 +9396,13 @@ __metadata:
   version: 5.0.0
   resolution: "strip-json-comments@npm:5.0.0"
   checksum: 3987fe7ac03f1f912375b63bfa010c54cfcf93b464eead789bd9deb3911bcf8fdaa6d3335e20915a7debbe76754b8bba18c13568e7c27946c21bbda117567666
+  languageName: node
+  linkType: hard
+
+"strip-json-comments@npm:5.0.1":
+  version: 5.0.1
+  resolution: "strip-json-comments@npm:5.0.1"
+  checksum: 3b9dbef5e1d27a9f95309a7eebaff84cdafbe0b2b8b3b2a80e8cff6532fc74e16be7d048b4d64dfdc28f221ad8aa2601dcb38f45d641e3a24b451acceb954440
   languageName: node
   linkType: hard
 
