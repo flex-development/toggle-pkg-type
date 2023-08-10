@@ -2611,17 +2611,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.4.5":
-  version: 20.4.5
-  resolution: "@types/node@npm:20.4.5"
-  checksum: eadcd2049af9ec686108073cd92cef6892bb93d244f8aff5e874f5648f04fab3082823f93c160fb807c5b10029d4eac8372755c9fc17e440804d450b5c0d3f0d
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.4.7":
+"@types/node@npm:*, @types/node@npm:20.4.7":
   version: 20.4.7
   resolution: "@types/node@npm:20.4.7"
   checksum: 2b71a26e80d96ce5c7c5d8cde2227adbacc9f50bfc9a60c45f96b2604ff6e60f7ba02cb7b24efd999e0a2ba25097680237b2d16a6f37082ed4136689e7976f12
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:20.4.5":
+  version: 20.4.5
+  resolution: "@types/node@npm:20.4.5"
+  checksum: eadcd2049af9ec686108073cd92cef6892bb93d244f8aff5e874f5648f04fab3082823f93c160fb807c5b10029d4eac8372755c9fc17e440804d450b5c0d3f0d
   languageName: node
   linkType: hard
 
