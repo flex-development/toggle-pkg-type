@@ -119,7 +119,7 @@
     "conventional-changelog-writer": "6.0.1",
     "conventional-recommended-bump": "7.0.1",
     "cross-env": "7.0.3",
-    "cspell": "6.31.2",
+    "cspell": "7.3.2",
     "dateformat": "5.0.3",
     "esbuild": "0.19.2",
     "eslint": "8.47.0",
