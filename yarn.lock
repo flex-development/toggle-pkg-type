@@ -1510,7 +1510,7 @@ __metadata:
     "@flex-development/esm-types": "npm:2.0.0"
     "@flex-development/mkbuild": "npm:1.0.0-alpha.23"
     "@flex-development/mlly": "npm:1.0.0-alpha.18"
-    "@flex-development/pathe": "npm:1.0.3"
+    "@flex-development/pathe": "npm:2.0.0"
     "@flex-development/pkg-types": "npm:3.0.0"
     "@flex-development/tsconfig-utils": "npm:2.0.1"
     "@flex-development/tutils": "npm:6.0.0-alpha.21"
